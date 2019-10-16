@@ -4,7 +4,7 @@
 * [简介](books/1010.md)
 * [安装与配置](books/1011.md)
     * [MySQL安装与配置](books/1012.md)
-    * [SQL server2008](books/1013.md)
+    * [SQL Server](books/1013.md)
 * [基础](books/1014.md)
     * [发展](books/1015.md)
     * [元素](books/1016.md)
