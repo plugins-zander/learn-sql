@@ -193,6 +193,8 @@
                     * [MSSQL](books/11271.md)
                 * [ORDER BY](books/11037.md)
                     * [MSSQL](books/11272.md)
+                * [其他](books/11305.md)
+                    * [MSSQL](books/11306.md)
             * [连接查询](books/11038.md)
                 * [MSSQL](books/11273.md)
             * [子查询](books/11039.md)
@@ -259,5 +261,5 @@
             * [等待语句--WAITFOR语句](books/11060.md)
                 * [MSSQL](books/11125.md)
                 * [Mysql](books/11126.md)
-* [end11304](books/19999.md)
+* [end11307](books/19999.md)
 
