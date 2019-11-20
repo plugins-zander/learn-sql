@@ -235,6 +235,8 @@
             * [MSSQL](books/11283.md)
         * [用户自定义函数](books/11222.md)
             * [MSSQL](books/11284.md)
+        * [配置函数](books/11317.md)
+            * [MSSQL](books/11318.md)
     * [流程设计](books/11047.md)
         * [MSSQL流程设计](books/11303.md)
         * [语句块](books/11048.md)
@@ -270,5 +272,5 @@
             * [等待语句--WAITFOR语句](books/11060.md)
                 * [MSSQL](books/11125.md)
                 * [Mysql](books/11126.md)
-* [end11317](books/19999.md)
+* [end11319](books/19999.md)
 
