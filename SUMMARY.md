@@ -38,6 +38,7 @@
             * [LW-Navicat界面-连本地](books/11234.md)
             * [LW-DBeaver界面-连云端](books/11235.md)
             * [LW-Navicat界面-连云端](books/11235.md)
+            * [jdbc-mysql](books/11338.md)
     * [基础](books/11016.md)
         * [标识符](books/11137.md)
             * [MSSQL](books/11308.md)
