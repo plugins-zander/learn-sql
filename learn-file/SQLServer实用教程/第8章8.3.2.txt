@@ -1,0 +1,37 @@
+RESTORE DATABASE { database_name | @database_name_var }	/*指定被还原的目标数据库*/
+ [ FROM <backup_device> [ ,...n ] ]						/*指定备份设备*/
+ [ WITH 
+ {
+     [ RECOVERY | NORECOVERY | STANDBY = 
+        {standby_file_name | @standby_file_name_var } 
+       ]
+	| , <general_WITH_options> [ ,...n ]
+	| , <point_in_time_WITH_options—RESTORE_DATABASE> 
+	} [ ,...n ]
+]
+[;]
+其中，
+<general_WITH_options> [ ,...n ]::= 
+  MOVE 'logical_file_name_in_backup' TO 'operating_system_file_name' [ ,...n ] 
+ | REPLACE 
+ | RESTART 
+ | RESTRICTED_USER 
+| FILE = { backup_set_file_number | @backup_set_file_number } 
+ | PASSWORD = { password | @password_variable } 
+ | MEDIANAME = { media_name | @media_name_variable } 
+ | MEDIAPASSWORD = { mediapassword | @mediapassword_variable } 
+ | BLOCKSIZE = { blocksize | @blocksize_variable } 
+ | BUFFERCOUNT = { buffercount | @buffercount_variable } 
+ | MAXTRANSFERSIZE = { maxtransfersize | @maxtransfersize_variable }
+ | { CHECKSUM | NO_CHECKSUM } 
+ | { STOP_ON_ERROR | CONTINUE_AFTER_ERROR } 
+ | STATS [ = percentage ] 
+ | { REWIND | NOREWIND } 
+ | { UNLOAD | NOUNLOAD }
+
+<point_in_time_WITH_options—RESTORE_DATABASE>::= 
+| {
+      STOPAT = { 'datetime' | @datetime_var } 
+  	| STOPATMARK = { 'lsn:lsn_number' } [ AFTER 'datetime' ] 
+	| STOPBEFOREMARK = {  'lsn:lsn_number' } [ AFTER 'datetime' ] 
+  }

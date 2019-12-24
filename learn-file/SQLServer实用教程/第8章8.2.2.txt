@@ -1,0 +1,24 @@
+BACKUP DATABASE { database_name | @database_name_var } 	/*被备份的数据库名*/
+TO < backup_device > [ ,...n ] 							/*指出备份目标设备*/
+[ [ MIRROR TO < backup_device > [ ,...n ] ] [ ...next-mirror ] ] 
+[ WITH 
+     [ BLOCKSIZE = { blocksize | @blocksize_variable } ] 		/*块大小*/
+     [ [ , ] { CHECKSUM | NO_CHECKSUM } ]
+     [ [ , ] { STOP_ON_ERROR | CONTINUE_AFTER_ERROR } ]
+     [ [ , ] DESCRIPTION = { 'text' | @text_variable } ] 
+     [ [ , ] DIFFERENTIAL ] 
+     [ [ , ] EXPIREDATE = { date | @date_var } 				/*备份集到期和允许被重写的日期*/
+   	  | RETAINDAYS = { days | @days_var } ] 
+     [ [ , ] PASSWORD = { password | @password_variable } ] 
+     [ [ , ] { FORMAT | NOFORMAT } ] 
+     [ [ , ] { INIT | NOINIT } ] 							/*指定是覆盖还是追加*/
+     [ [ , ] { NOSKIP | SKIP } ] 
+     [ [ , ] MEDIADESCRIPTION = { 'text' | @text_variable } ] 
+     [ [ , ] MEDIANAME = { media_name | @media_name_variable } ] 
+     [ [ , ] MEDIAPASSWORD = { mediapassword | @mediapassword_variable } ] 
+     [ [ , ] NAME = { backup_set_name | @backup_set_name_var } ] 
+     [ [ , ] { NOREWIND | REWIND } ] 
+     [ [ , ] { NOUNLOAD | UNLOAD } ] 
+     [ [ , ] RESTART ] 
+     [ [ , ] STATS [ = percentage ] ] 
+]

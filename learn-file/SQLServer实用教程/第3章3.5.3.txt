@@ -1,0 +1,25 @@
+[ WITH <common_table_expression> [...n] ]
+UPDATE [ TOP ( expression ) [ PERCENT ] ] 
+{   table_name     								/*修改表数据*/
+   | view_name             						/*修改视图数据*/
+   | rowset_function_limited  				
+		WITH ( < table_hint_limited > [ ...n ] )
+}
+SET											/*赋予新值*/
+{	 column_name = { expression | DEFAULT | NULL }	/*为列重新指定值*/
+	| column_name { .WRITE ( expression , @Offset , @Length ) }
+	| @variable = expression						/*指定变量的新值*/
+	| @variable = column = expression					/*指定列和变量的新值*/
+	| column_name { += | ?= | *= | /= | %= | &= | ^= | |= } expression
+	| @variable { += | ?= | *= | /= | %= | &= | ^= | |= } expression
+	| @variable = column { += | ?= | *= | /= | %= | &= | ^= | |= } expression
+} [ ,...n ] 
+	[ <OUTPUT Clause> ]
+   	[ FROM{ <table_source> } [ ,...n ] ] 
+    	[ WHERE {   <search_condition> 				/*指定条件*/
+           	 | { [ CURRENT OF 					/*有关游标的说明*/
+				{ { [ GLOBAL ] cursor_name } | cursor_variable_name } ]}
+            } 
+   	] 
+    [ OPTION ( <query_hint> [ ,...n ] ) ]				/*使用优化程序*/
+[ ; ]
