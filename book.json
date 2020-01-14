@@ -1,148 +1,57 @@
 {
-    "title": "Zander's Book",
-    "author": "Zander Zhao",
-    "description": "My Learn Book",
-    "language": "zh-hans",
-    "gitbook": "3.2.3",
-    "links": {
-        "sidebar": {
-            "总目录": "https://zlogs.net/learn-books"
-        }
+  "title": "learn-sql",
+  "author": "Zander Zhao",
+  "description": "learn-sql - Zander's Learn Book",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-sharing",
+    "theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git",
+    "search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git",
+    "katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git",
+    "splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git",
+    "mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git",
+    "edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git",
+    "donate@git+https://github.com/plugins-zander/gitbook-plugin-donate.git",
+    "sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git",
+    "pageview-count@git+https://github.com/plugins-zander/gitbook-plugin-pageview-count.git",
+    "todo@git+https://github.com/plugins-zander/gitbook-plugin-todo.git",
+    "chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git",
+    "copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git",
+    "page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"
+  ],
+  "pluginsConfig": {
+    "mygitalk": {
+      "clientID": "364365ceb2659b383d73",
+      "clientSecret": "447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54",
+      "repo": "talk",
+      "owner": "zanderzhao",
+      "admin": [
+        "zanderzhao"
+      ],
+      "distractionFreeMode": false
     },
-    "plugins": [
-        "pageview-count",
-        "mygitalk",
-        "github",
-        "github-buttons",
-        "include-csv",
-        "page-toc-button",
-        "local-video",
-        "3-ba",
-        "chart",
-        "ga",
-        "graph",
-        "mermaid-gb3",
-        "puml",
-        "mermaid",
-        "katex",
-        "quiz",
-        "accordion",
-        "click-reveal",
-        "auto-scroll-table",
-        "alerts",
-        "donate",
-        "klipse",
-        "todo",
-        "hide-element",
-        "chapter-fold",
-        "code",
-        "splitter",
-        "advanced-emoji",
-        "emphasize",
-        "-lunr",
-        "-search",
-        "search-pro",
-        "sectionx",
-        "tbfed-pagefooter",
-        "popup",
-        "todo",
-        "-sharing",
-        "sharing-plus"
-    ],
-    "pluginsConfig": {
-        "github-buttons": {
-            "buttons": [
-                {
-                    "user": "ZanderZhao",
-                    "repo": "learn-sql",
-                    "type": "star",
-                    "width": "60",
-                    "size": "small"
-                },
-                {
-                    "user": "zanderzhao",
-                    "type": "follow",
-                    "width": "60",
-                    "count": true,
-                    "size": "small"
-                }
-            ]
-        },
-		"github": {
-			"url": "https://github.com/ZanderZhao"
-		},
-        "mygitalk": {
-            "clientID": "364365ceb2659b383d73",
-            "clientSecret": "447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54",
-            "repo": "talk",
-            "owner": "zanderzhao",
-            "admin": [
-                "zanderzhao"
-            ],
-            "distractionFreeMode": false
-        },
-        "page-toc-button": {
-            "maxTocDepth": 2,
-            "minTocSize": 2
-        },
-        "ga": {
-            "token": "UA-149127400-1"
-        },
-        "quiz": {
-            "labels": {
-                "showCorrect": "显示正确答案",
-                "check": "确认",
-                "showExplanation": "查看解释",
-                "explanationHeader": "Explanation"
-            },
-            "text": {
-                "noChosen": "",
-                "incomplete": ""
-            },
-            "buttons": {
-                "showCorrect": true,
-                "showExplanation": true
-            }
-        },
-        "3-ba": {
-            "token": "6bb7c6072673e28e82652b1d18465386"
-        },
-        "chart": {
-            "type": "c3"
-        },
-        "donate": {
-            "wechat": "https://raw.githubusercontent.com/ZanderZhao/images/master/mypay/book/wechat.jpg",
-            "alipay": "https://raw.githubusercontent.com/ZanderZhao/images/master/mypay/book/alipay.jpg",
-            "title": "",
-            "button": "赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
-        },
-        "hide-element": {
-            "elements": [
-                ".gitbook-link"
-            ]
-        },
-        "tbfed-pagefooter": {
-            "copyright": "转载注明出处 &copy Zander Zhao",
-            "modify_label": "该文章修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "sharing": {
-            "all": [
-                "linkedin",
-                "qq",
-                "weibo",
-                "facebook",
-                "twitter",
-                "qzone",
-                "douban",
-                "instapaper",
-                "google",
-                "messenger",
-                "viber",
-                "whatsapp"
-            ]
-        }
+    "edit-link": {
+      "base": "https://github.com/ZanderZhao/learn-sql/edit/master/",
+      "label": "编辑本页"
+    },
+    "donate": {
+      "wechat": "https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/wechat.jpg",
+      "alipay": "https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/alipay.jpg",
+      "title": "",
+      "button": "赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    },
+    "sitemap-general": {
+      "prefix": "https://zlogs.net/learn-sql/"
+    },
+    "page-toc": {
+      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+      "position": "before-first",
+      "showByDefault": true
     }
+  }
 }
