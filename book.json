@@ -4,6 +4,12 @@
   "description": "learn-sql - Zander's Learn Book",
   "language": "zh-hans",
   "gitbook": "3.2.3",
+  "links": {
+    "sidebar": {  
+        "# 博客": "https://zlogs.net",
+        "# 总目录": "https://zlogs.net/learn-books"
+      }
+  },
   "plugins": [
     "-lunr",
     "-search",
