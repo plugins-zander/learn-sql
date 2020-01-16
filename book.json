@@ -16,7 +16,7 @@
     "edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git",
     "donate@git+https://github.com/plugins-zander/gitbook-plugin-donate.git",
     "sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git",
-    "pageview-count@git+https://github.com/plugins-zander/gitbook-plugin-pageview-count.git",
+    "tbfed-pagefooter@git+https://github.com/plugins-zander/gitbook-plugin-tbfed-pagefooter.git",
     "todo@git+https://github.com/plugins-zander/gitbook-plugin-todo.git",
     "chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git",
     "copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git",
@@ -47,6 +47,12 @@
     },
     "sitemap-general": {
       "prefix": "https://zlogs.net/learn-sql/"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "转载注明出处 &copy Zander Zhao",
+      "modify_bszlabel": "<span id=\"busuanzi_container_page_pv\">本文总阅读量<span id=\"busuanzi_value_page_pv\"></span>次</span>",
+      "modify_label": "最新修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "page-toc": {
       "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
