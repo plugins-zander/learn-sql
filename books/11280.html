@@ -1,0 +1,5079 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MSSQL · learn-sql</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11219.html" />
+    
+    
+    <link rel="prev" href="11218.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://zlogs.net" target="_blank" class="custom-link"># 博客</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://zlogs.net/learn-books" target="_blank" class="custom-link"># 总目录</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关系数据库应用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="11014.html">
+            
+                <a href="11014.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="11015.html">
+            
+                <a href="11015.html">
+            
+                    
+                    发展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="11261.html">
+            
+                <a href="11261.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="11127.html">
+            
+                <a href="11127.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="11128.html">
+            
+                <a href="11128.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="11134.html">
+            
+                <a href="11134.html">
+            
+                    
+                    原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="11135.html">
+            
+                <a href="11135.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="11136.html">
+            
+                <a href="11136.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="11011.html">
+            
+                <a href="11011.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="11012.html">
+            
+                <a href="11012.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1.1" data-path="11201.html">
+            
+                <a href="11201.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.1.2" data-path="11202.html">
+            
+                <a href="11202.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="11013.html">
+            
+                <a href="11013.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.2.1" data-path="11203.html">
+            
+                <a href="11203.html">
+            
+                    
+                    2008
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.2" data-path="11204.html">
+            
+                <a href="11204.html">
+            
+                    
+                    2014
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.3" data-path="11247.html">
+            
+                <a href="11247.html">
+            
+                    
+                    2014组件和管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.4" data-path="11248.html">
+            
+                <a href="11248.html">
+            
+                    
+                    2008组件和管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.5" data-path="11249.html">
+            
+                <a href="11249.html">
+            
+                    
+                    2008基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="11227.html">
+            
+                <a href="11227.html">
+            
+                    
+                    连接
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="11228.html">
+            
+                <a href="11228.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1.1" data-path="11237.html">
+            
+                <a href="11237.html">
+            
+                    
+                    W-2014界面-云端允许连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.2" data-path="11229.html">
+            
+                <a href="11229.html">
+            
+                    
+                    W-2008界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.3" data-path="11230.html">
+            
+                <a href="11230.html">
+            
+                    
+                    W-2014界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.4" data-path="11230.html">
+            
+                <a href="11230.html">
+            
+                    
+                    W-2014界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.5" data-path="11231.html">
+            
+                <a href="11231.html">
+            
+                    
+                    LW-DBeaver界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.6" data-path="11231.html">
+            
+                <a href="11231.html">
+            
+                    
+                    LW-DBeaver界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.7" data-path="11236.html">
+            
+                <a href="11236.html">
+            
+                    
+                    LW-Navicat界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.8" data-path="11236.html">
+            
+                <a href="11236.html">
+            
+                    
+                    LW-Navicat界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="11011.html">
+            
+                <a href="11011.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.2.1" data-path="11232.html">
+            
+                <a href="11232.html">
+            
+                    
+                    W-命令-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.2" data-path="11233.html">
+            
+                <a href="11233.html">
+            
+                    
+                    L-命令-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.3" data-path="11234.html">
+            
+                <a href="11234.html">
+            
+                    
+                    LW-DBeaver界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.4" data-path="11234.html">
+            
+                <a href="11234.html">
+            
+                    
+                    LW-Navicat界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.5" data-path="11235.html">
+            
+                <a href="11235.html">
+            
+                    
+                    LW-DBeaver界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.6" data-path="11235.html">
+            
+                <a href="11235.html">
+            
+                    
+                    LW-Navicat界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.7" data-path="11338.html">
+            
+                <a href="11338.html">
+            
+                    
+                    jdbc-mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="11016.html">
+            
+                <a href="11016.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="11137.html">
+            
+                <a href="11137.html">
+            
+                    
+                    标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.1" data-path="11308.html">
+            
+                <a href="11308.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.2" data-path="11138.html">
+            
+                <a href="11138.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.2.1" data-path="11309.html">
+            
+                <a href="11309.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.3" data-path="11139.html">
+            
+                <a href="11139.html">
+            
+                    
+                    预定义标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.3.1" data-path="11310.html">
+            
+                <a href="11310.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.4" data-path="11140.html">
+            
+                <a href="11140.html">
+            
+                    
+                    用户自定义标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.4.1" data-path="11311.html">
+            
+                <a href="11311.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.4.1.1" data-path="11285.html">
+            
+                <a href="11285.html">
+            
+                    
+                    MSSQL变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="11141.html">
+            
+                <a href="11141.html">
+            
+                    
+                    行与缩进
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.2.1" data-path="11312.html">
+            
+                <a href="11312.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="11142.html">
+            
+                <a href="11142.html">
+            
+                    
+                    大小写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.3.1" data-path="11313.html">
+            
+                <a href="11313.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="11143.html">
+            
+                <a href="11143.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.4.1" data-path="11314.html">
+            
+                <a href="11314.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.5" data-path="11144.html">
+            
+                <a href="11144.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.5.1" data-path="11315.html">
+            
+                <a href="11315.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.6" data-path="11145.html">
+            
+                <a href="11145.html">
+            
+                    
+                    语句结束
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.6.1" data-path="11316.html">
+            
+                <a href="11316.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="11017.html">
+            
+                <a href="11017.html">
+            
+                    
+                    风格
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.6.1" data-path="11131.html">
+            
+                <a href="11131.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6.2" data-path="11132.html">
+            
+                <a href="11132.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="11146.html">
+            
+                <a href="11146.html">
+            
+                    
+                    元素
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="11147.html">
+            
+                <a href="11147.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="11205.html">
+            
+                <a href="11205.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="11206.html">
+            
+                <a href="11206.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="11148.html">
+            
+                <a href="11148.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="11252.html">
+            
+                <a href="11252.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="11207.html">
+            
+                <a href="11207.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.1" data-path="11208.html">
+            
+                <a href="11208.html">
+            
+                    
+                    数值型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.1.1" data-path="11238.html">
+            
+                <a href="11238.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.1.2" data-path="11239.html">
+            
+                <a href="11239.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.2" data-path="11209.html">
+            
+                <a href="11209.html">
+            
+                    
+                    字符串型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.2.1" data-path="11240.html">
+            
+                <a href="11240.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.2.2" data-path="11241.html">
+            
+                <a href="11241.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.3" data-path="11210.html">
+            
+                <a href="11210.html">
+            
+                    
+                    日期时间型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.3.1" data-path="11242.html">
+            
+                <a href="11242.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.3.2" data-path="11243.html">
+            
+                <a href="11243.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.4" data-path="11254.html">
+            
+                <a href="11254.html">
+            
+                    
+                    货币型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.4.1" data-path="11211.html">
+            
+                <a href="11211.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.5" data-path="11259.html">
+            
+                <a href="11259.html">
+            
+                    
+                    文本型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.5.1" data-path="11260.html">
+            
+                <a href="11260.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.6" data-path="11255.html">
+            
+                <a href="11255.html">
+            
+                    
+                    二进制型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.6.1" data-path="11212.html">
+            
+                <a href="11212.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.7" data-path="11256.html">
+            
+                <a href="11256.html">
+            
+                    
+                    其他数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.7.1" data-path="11213.html">
+            
+                <a href="11213.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.8" data-path="11257.html">
+            
+                <a href="11257.html">
+            
+                    
+                    自定义数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.8.1" data-path="11214.html">
+            
+                <a href="11214.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3" data-path="11215.html">
+            
+                <a href="11215.html">
+            
+                    
+                    常变
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.1" data-path="11216.html">
+            
+                <a href="11216.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.1.1" data-path="11285.html">
+            
+                <a href="11285.html">
+            
+                    
+                    MSSQL变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3.2" data-path="11217.html">
+            
+                <a href="11217.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.2.1" data-path="11286.html">
+            
+                <a href="11286.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="11190.html">
+            
+                <a href="11190.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="11189.html">
+            
+                <a href="11189.html">
+            
+                    
+                    MSSQL运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="11288.html">
+            
+                <a href="11288.html">
+            
+                    
+                    计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="11289.html">
+            
+                <a href="11289.html">
+            
+                    
+                    算术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1.1" data-path="11192.html">
+            
+                <a href="11192.html">
+            
+                    
+                    MSSQL算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="11290.html">
+            
+                <a href="11290.html">
+            
+                    
+                    位操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.2.1" data-path="11193.html">
+            
+                <a href="11193.html">
+            
+                    
+                    MSSQL位操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="11291.html">
+            
+                <a href="11291.html">
+            
+                    
+                    判断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="11292.html">
+            
+                <a href="11292.html">
+            
+                    
+                    关系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1.1" data-path="11195.html">
+            
+                <a href="11195.html">
+            
+                    
+                    MSSQL关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="11293.html">
+            
+                <a href="11293.html">
+            
+                    
+                    逻辑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.2.1" data-path="11196.html">
+            
+                <a href="11196.html">
+            
+                    
+                    MSSQL逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="11294.html">
+            
+                <a href="11294.html">
+            
+                    
+                    基本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="11295.html">
+            
+                <a href="11295.html">
+            
+                    
+                    赋值
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1.1" data-path="11225.html">
+            
+                <a href="11225.html">
+            
+                    
+                    MSSQL赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="11296.html">
+            
+                <a href="11296.html">
+            
+                    
+                    字符串连接符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.2.1" data-path="11226.html">
+            
+                <a href="11226.html">
+            
+                    
+                    MSSQL字符串连接符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="11297.html">
+            
+                <a href="11297.html">
+            
+                    
+                    优先级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.5.1" data-path="11197.html">
+            
+                <a href="11197.html">
+            
+                    
+                    MSSQL优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="11191.html">
+            
+                <a href="11191.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.6.1" data-path="11194.html">
+            
+                <a href="11194.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6.2" data-path="11224.html">
+            
+                <a href="11224.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="11149.html">
+            
+                <a href="11149.html">
+            
+                    
+                    语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="11018.html">
+            
+                <a href="11018.html">
+            
+                    
+                    功能控制语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.1" data-path="11298.html">
+            
+                <a href="11298.html">
+            
+                    
+                    MSSQL功能控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2" data-path="11019.html">
+            
+                <a href="11019.html">
+            
+                    
+                    数据定义语言DDL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.1" data-path="11262.html">
+            
+                <a href="11262.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2" data-path="11150.html">
+            
+                <a href="11150.html">
+            
+                    
+                    创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.1" data-path="11020.html">
+            
+                <a href="11020.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.1.1" data-path="11061.html">
+            
+                <a href="11061.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.1.2" data-path="11062.html">
+            
+                <a href="11062.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.2" data-path="11021.html">
+            
+                <a href="11021.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.2.1" data-path="11063.html">
+            
+                <a href="11063.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.2.2" data-path="11064.html">
+            
+                <a href="11064.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.3" data-path="11022.html">
+            
+                <a href="11022.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.3.1" data-path="11065.html">
+            
+                <a href="11065.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.3.2" data-path="11066.html">
+            
+                <a href="11066.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.4" data-path="11023.html">
+            
+                <a href="11023.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.4.1" data-path="11067.html">
+            
+                <a href="11067.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.4.2" data-path="11068.html">
+            
+                <a href="11068.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.5" data-path="11024.html">
+            
+                <a href="11024.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.5.1" data-path="11069.html">
+            
+                <a href="11069.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.5.2" data-path="11070.html">
+            
+                <a href="11070.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.6" data-path="11025.html">
+            
+                <a href="11025.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.6.1" data-path="11071.html">
+            
+                <a href="11071.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.6.2" data-path="11072.html">
+            
+                <a href="11072.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.7" data-path="11040.html">
+            
+                <a href="11040.html">
+            
+                    
+                    游标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.7.1" data-path="11275.html">
+            
+                <a href="11275.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3" data-path="11170.html">
+            
+                <a href="11170.html">
+            
+                    
+                    删除
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.1" data-path="11250.html">
+            
+                <a href="11250.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.1.1" data-path="11171.html">
+            
+                <a href="11171.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.1.2" data-path="11172.html">
+            
+                <a href="11172.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.2" data-path="11173.html">
+            
+                <a href="11173.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.2.1" data-path="11174.html">
+            
+                <a href="11174.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.2.2" data-path="11175.html">
+            
+                <a href="11175.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.3" data-path="11176.html">
+            
+                <a href="11176.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.3.1" data-path="11177.html">
+            
+                <a href="11177.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.3.2" data-path="11178.html">
+            
+                <a href="11178.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.4" data-path="11179.html">
+            
+                <a href="11179.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.4.1" data-path="11180.html">
+            
+                <a href="11180.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.4.2" data-path="11181.html">
+            
+                <a href="11181.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.5" data-path="11182.html">
+            
+                <a href="11182.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.5.1" data-path="11183.html">
+            
+                <a href="11183.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.5.2" data-path="11184.html">
+            
+                <a href="11184.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.6" data-path="11185.html">
+            
+                <a href="11185.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.6.1" data-path="11186.html">
+            
+                <a href="11186.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.6.2" data-path="11187.html">
+            
+                <a href="11187.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4" data-path="11151.html">
+            
+                <a href="11151.html">
+            
+                    
+                    修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.1" data-path="11152.html">
+            
+                <a href="11152.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.1.1" data-path="11153.html">
+            
+                <a href="11153.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.1.2" data-path="11154.html">
+            
+                <a href="11154.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.2" data-path="11155.html">
+            
+                <a href="11155.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.2.1" data-path="11156.html">
+            
+                <a href="11156.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.2.2" data-path="11157.html">
+            
+                <a href="11157.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.3" data-path="11158.html">
+            
+                <a href="11158.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.3.1" data-path="11159.html">
+            
+                <a href="11159.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.3.2" data-path="11160.html">
+            
+                <a href="11160.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.4" data-path="11161.html">
+            
+                <a href="11161.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.4.1" data-path="11162.html">
+            
+                <a href="11162.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.4.2" data-path="11163.html">
+            
+                <a href="11163.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.5" data-path="11164.html">
+            
+                <a href="11164.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.5.1" data-path="11165.html">
+            
+                <a href="11165.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.5.2" data-path="11166.html">
+            
+                <a href="11166.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.6" data-path="11167.html">
+            
+                <a href="11167.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.6.1" data-path="11168.html">
+            
+                <a href="11168.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.6.2" data-path="11169.html">
+            
+                <a href="11169.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5" data-path="11319.html">
+            
+                <a href="11319.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.1" data-path="11320.html">
+            
+                <a href="11320.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.1.1" data-path="11321.html">
+            
+                <a href="11321.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.1.2" data-path="11322.html">
+            
+                <a href="11322.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.2" data-path="11323.html">
+            
+                <a href="11323.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.2.1" data-path="11324.html">
+            
+                <a href="11324.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.2.2" data-path="11325.html">
+            
+                <a href="11325.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.3" data-path="11326.html">
+            
+                <a href="11326.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.3.1" data-path="11327.html">
+            
+                <a href="11327.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.3.2" data-path="11328.html">
+            
+                <a href="11328.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.4" data-path="11329.html">
+            
+                <a href="11329.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.4.1" data-path="11330.html">
+            
+                <a href="11330.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.4.2" data-path="11331.html">
+            
+                <a href="11331.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.5" data-path="11332.html">
+            
+                <a href="11332.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.5.1" data-path="11333.html">
+            
+                <a href="11333.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.5.2" data-path="11334.html">
+            
+                <a href="11334.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.6" data-path="11335.html">
+            
+                <a href="11335.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.6.1" data-path="11336.html">
+            
+                <a href="11336.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.6.2" data-path="11337.html">
+            
+                <a href="11337.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3" data-path="11026.html">
+            
+                <a href="11026.html">
+            
+                    
+                    数据操纵语言DML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.1" data-path="11299.html">
+            
+                <a href="11299.html">
+            
+                    
+                    MSSQL数据操纵语言DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.2" data-path="11027.html">
+            
+                <a href="11027.html">
+            
+                    
+                    插入--增
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.2.1" data-path="11263.html">
+            
+                <a href="11263.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.3" data-path="11029.html">
+            
+                <a href="11029.html">
+            
+                    
+                    删除--删
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.3.1" data-path="11265.html">
+            
+                <a href="11265.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.4" data-path="11028.html">
+            
+                <a href="11028.html">
+            
+                    
+                    更新--改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.4.1" data-path="11264.html">
+            
+                <a href="11264.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4" data-path="11030.html">
+            
+                <a href="11030.html">
+            
+                    
+                    数据查询语言DQL--查
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.1" data-path="11300.html">
+            
+                <a href="11300.html">
+            
+                    
+                    MSSQL数据查询语言DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.2" data-path="11031.html">
+            
+                <a href="11031.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.2.1" data-path="11266.html">
+            
+                <a href="11266.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3" data-path="11032.html">
+            
+                <a href="11032.html">
+            
+                    
+                    基本子句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.1" data-path="11267.html">
+            
+                <a href="11267.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.2" data-path="11033.html">
+            
+                <a href="11033.html">
+            
+                    
+                    FROM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.2.1" data-path="11268.html">
+            
+                <a href="11268.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.3" data-path="11034.html">
+            
+                <a href="11034.html">
+            
+                    
+                    WHERE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1" data-path="11269.html">
+            
+                <a href="11269.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1.1" data-path="11274.html">
+            
+                <a href="11274.html">
+            
+                    
+                    MSSQL子查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1.2" data-path="11273.html">
+            
+                <a href="11273.html">
+            
+                    
+                    MSSQL连接查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.4" data-path="11035.html">
+            
+                <a href="11035.html">
+            
+                    
+                    GROUP BY
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.4.1" data-path="11270.html">
+            
+                <a href="11270.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.5" data-path="11036.html">
+            
+                <a href="11036.html">
+            
+                    
+                    HAVING
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.5.1" data-path="11271.html">
+            
+                <a href="11271.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.6" data-path="11037.html">
+            
+                <a href="11037.html">
+            
+                    
+                    ORDER BY
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.6.1" data-path="11272.html">
+            
+                <a href="11272.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.7" data-path="11305.html">
+            
+                <a href="11305.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.7.1" data-path="11306.html">
+            
+                <a href="11306.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.4" data-path="11038.html">
+            
+                <a href="11038.html">
+            
+                    
+                    连接查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.4.1" data-path="11273.html">
+            
+                <a href="11273.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.5" data-path="11039.html">
+            
+                <a href="11039.html">
+            
+                    
+                    子查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.5.1" data-path="11274.html">
+            
+                <a href="11274.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5" data-path="11042.html">
+            
+                <a href="11042.html">
+            
+                    
+                    数据控制语言DCL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.1" data-path="11301.html">
+            
+                <a href="11301.html">
+            
+                    
+                    MSSQL数据控制语言DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.2" data-path="11043.html">
+            
+                <a href="11043.html">
+            
+                    
+                    事务管理与并发控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.2.1" data-path="11276.html">
+            
+                <a href="11276.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.3" data-path="11044.html">
+            
+                <a href="11044.html">
+            
+                    
+                    数据完整性管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.3.1" data-path="11277.html">
+            
+                <a href="11277.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.3.1.1" data-path="11339.html">
+            
+                <a href="11339.html">
+            
+                    
+                    数据完整性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.4" data-path="11045.html">
+            
+                <a href="11045.html">
+            
+                    
+                    数据安全性控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.4.1" data-path="11278.html">
+            
+                <a href="11278.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.5" data-path="11345.html">
+            
+                <a href="11345.html">
+            
+                    
+                    数据库备份、恢复、复制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.5.1" data-path="11046.html">
+            
+                <a href="11046.html">
+            
+                    
+                    MSSQL数据库备份、恢复、复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.5.2" data-path="11244.html">
+            
+                <a href="11244.html">
+            
+                    
+                    数据库快照、分离、附加
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.5.2.1" data-path="11245.html">
+            
+                <a href="11245.html">
+            
+                    
+                    MSSQL快照、分离、附加
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="11199.html">
+            
+                <a href="11199.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.1" data-path="11302.html">
+            
+                <a href="11302.html">
+            
+                    
+                    MSSQL函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.2" data-path="11200.html">
+            
+                <a href="11200.html">
+            
+                    
+                    聚合函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.2.1" data-path="11279.html">
+            
+                <a href="11279.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.3" data-path="11218.html">
+            
+                <a href="11218.html">
+            
+                    
+                    字符串处理函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.2.3.1" data-path="11280.html">
+            
+                <a href="11280.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.4" data-path="11219.html">
+            
+                <a href="11219.html">
+            
+                    
+                    数学函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.4.1" data-path="11281.html">
+            
+                <a href="11281.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.5" data-path="11220.html">
+            
+                <a href="11220.html">
+            
+                    
+                    日期时间函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.5.1" data-path="11282.html">
+            
+                <a href="11282.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.6" data-path="11221.html">
+            
+                <a href="11221.html">
+            
+                    
+                    数据类型转换函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.6.1" data-path="11283.html">
+            
+                <a href="11283.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.7" data-path="11222.html">
+            
+                <a href="11222.html">
+            
+                    
+                    用户自定义函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.7.1" data-path="11284.html">
+            
+                <a href="11284.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.8" data-path="11317.html">
+            
+                <a href="11317.html">
+            
+                    
+                    配置函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.8.1" data-path="11318.html">
+            
+                <a href="11318.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.9" data-path="11340.html">
+            
+                <a href="11340.html">
+            
+                    
+                    游标函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.9.1" data-path="11341.html">
+            
+                <a href="11341.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.10" data-path="11342.html">
+            
+                <a href="11342.html">
+            
+                    
+                    游标函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.10.1" data-path="11343.html">
+            
+                <a href="11343.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="11047.html">
+            
+                <a href="11047.html">
+            
+                    
+                    流程设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.1" data-path="11303.html">
+            
+                <a href="11303.html">
+            
+                    
+                    MSSQL流程设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.2" data-path="11048.html">
+            
+                <a href="11048.html">
+            
+                    
+                    语句块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.2.1" data-path="11107.html">
+            
+                <a href="11107.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.2.2" data-path="11108.html">
+            
+                <a href="11108.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.3" data-path="11049.html">
+            
+                <a href="11049.html">
+            
+                    
+                    顺序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.3.1" data-path="11109.html">
+            
+                <a href="11109.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.3.2" data-path="11110.html">
+            
+                <a href="11110.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4" data-path="11050.html">
+            
+                <a href="11050.html">
+            
+                    
+                    选择
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.1" data-path="11051.html">
+            
+                <a href="11051.html">
+            
+                    
+                    条件语句--IF语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.1.1" data-path="11111.html">
+            
+                <a href="11111.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.1.2" data-path="11112.html">
+            
+                <a href="11112.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.2" data-path="11052.html">
+            
+                <a href="11052.html">
+            
+                    
+                    多重分支--CASE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.2.1" data-path="11113.html">
+            
+                <a href="11113.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.2.2" data-path="11114.html">
+            
+                <a href="11114.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5" data-path="11053.html">
+            
+                <a href="11053.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.1" data-path="11054.html">
+            
+                <a href="11054.html">
+            
+                    
+                    WHILE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.1.1" data-path="11115.html">
+            
+                <a href="11115.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.1.2" data-path="11116.html">
+            
+                <a href="11116.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.2" data-path="11055.html">
+            
+                <a href="11055.html">
+            
+                    
+                    BREAK/CONTINUE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.2.1" data-path="11117.html">
+            
+                <a href="11117.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.2.2" data-path="11118.html">
+            
+                <a href="11118.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6" data-path="11056.html">
+            
+                <a href="11056.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.1" data-path="11057.html">
+            
+                <a href="11057.html">
+            
+                    
+                    无条件转移--GOTO语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.1.1" data-path="11119.html">
+            
+                <a href="11119.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.1.2" data-path="11120.html">
+            
+                <a href="11120.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.2" data-path="11058.html">
+            
+                <a href="11058.html">
+            
+                    
+                    返回语句--RETURN语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.2.1" data-path="11121.html">
+            
+                <a href="11121.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.2.2" data-path="11122.html">
+            
+                <a href="11122.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.3" data-path="11059.html">
+            
+                <a href="11059.html">
+            
+                    
+                    错误处理--TRY…CATCH语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.3.1" data-path="11123.html">
+            
+                <a href="11123.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.3.2" data-path="11124.html">
+            
+                <a href="11124.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.4" data-path="11060.html">
+            
+                <a href="11060.html">
+            
+                    
+                    等待语句--WAITFOR语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.4.1" data-path="11125.html">
+            
+                <a href="11125.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.4.2" data-path="11126.html">
+            
+                <a href="11126.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="11344.html">
+            
+                <a href="11344.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="19999.html">
+            
+                <a href="19999.html">
+            
+                    
+                    end11346
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MSSQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mssql">MSSQL</h1>
+<h2 id="&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x51FD;&#x6570;">&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x51FD;&#x6570;</h2>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x51FD;&#x6570;</p>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x8BED;&#x6CD5;</th>
+<th>&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x4E3E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASCII (character_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;ASCII&#x503C;&#xFF08;int&#x578B;&#xFF09;</td>
+<td>ASCII(&apos;abcdef&apos;)&#x8FD4;&#x56DE;97</td>
+</tr>
+<tr>
+<td>CHAR ( integer_expression )</td>
+<td>&#x5C06;ASCII&#x503C;&#x8F6C;&#x6362;&#x4E3A;&#x76F8;&#x5E94;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8BE5;&#x5B57;&#x7B26;</td>
+<td>CHAR(65)&#x8FD4;&#x56DE;&apos;A&apos;&#xFF0C;CHAR(97)&#x8FD4;&#x56DE;&apos;a&apos;</td>
+</tr>
+<tr>
+<td>CHARINDEX(expression1 ,expression2[,start_location] )</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6307;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;start_location&#xFF0C;&#x5219;&#x8868;&#x793A;&#x4ECE;&#x4F4D;&#x7F6E;start_location&#x5F00;&#x59CB;&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4EE5;&#x8FD4;&#x56DE;&#x5176;&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x5219;&#x8FD4;&#x56DE;0</td>
+<td>CHARINDEX(&apos;be&apos;,&apos;aabecdefbeghi&apos;)&#x8FD4;&#x56DE;3&#xFF0C;CHARINDEX(&apos;be&apos;,&apos;aabecdefbeghi&apos;,4)&#x8FD4;&#x56DE;9</td>
+</tr>
+<tr>
+<td>LEFT(character_expression, integer_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;character_expression&#x4E2D;&#x4ECE;&#x5DE6;&#x8FB9;&#x5F00;&#x59CB;&#x7684;integer_expression&#x4E2A;&#x5B57;&#x7B26;&#x3002;</td>
+<td>LEFT(&apos;abcdef&apos;,3)&#x8FD4;&#x56DE;&apos;abc&apos;</td>
+</tr>
+<tr>
+<td>LEN( string_expression )</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#xFF08;&#x800C;&#x4E0D;&#x662F;&#x5B57;&#x8282;&#xFF09;&#x4E2A;&#x6570;&#xFF0C;&#x5176;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x5C3E;&#x968F;&#x7A7A;&#x683C;&#x3002;</td>
+<td>LEN(&apos;a bcdefg   &apos;)&#x8FD4;&#x56DE;8</td>
+</tr>
+<tr>
+<td>LOWER(character_expression)</td>
+<td>&#x5C06;&#x5927;&#x5199;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x540E;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</td>
+<td>LOWER(&apos;AbCdEfG&apos;)&#x8FD4;&#x56DE;&apos;abcdefg&apos;</td>
+</tr>
+<tr>
+<td>LTRIM(character_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5220;&#x9664;&#x8D77;&#x59CB;&#x7A7A;&#x683C;&#x4E4B;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;</td>
+<td>LTRIM(&apos;   abcdef  &apos;)&#x8FD4;&#x56DE;&apos;abcdef  &apos;</td>
+</tr>
+<tr>
+<td>NCHAR(integer_expression)</td>
+<td>&#x6839;&#x636E;Unicode&#x6807;&#x51C6;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD4;&#x56DE;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x6574;&#x6570;&#x4EE3;&#x7801;&#x7684;Unicode&#x5B57;&#x7B26;</td>
+<td>NCHAR(197)&#x8FD4;&#x56DE;&apos;&#xC5;&apos;</td>
+</tr>
+<tr>
+<td>PATINDEX(&apos;%pattern%&apos;,expression )</td>
+<td>&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x67D0;&#x6A21;&#x5F0F;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x5728;&#x5168;&#x90E8;&#x6709;&#x6548;&#x7684;&#x6587;&#x672C;&#x548C;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x8BE5;&#x6A21;&#x5F0F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x96F6;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;</td>
+<td>PATINDEX(&apos;%defg%&apos;,&apos;abcdefghidefg&apos;)&#x8FD4;&#x56DE;4</td>
+</tr>
+<tr>
+<td>QUOTENAME(&apos;character_string&apos;[,&apos;quote_character&apos; ] )</td>
+<td>&#x8FD4;&#x56DE;&#x5E26;&#x6709;&#x5206;&#x9694;&#x7B26;&#x7684; Unicode &#x5B57;&#x7B26;&#x4E32;</td>
+<td>QUOTENAME(&apos;abcdef&apos;,&apos;&apos;&apos;&apos;)&#x8FD4;&#x56DE;&apos;abcdef&apos;&#xFF0C; QUOTENAME(&apos;abcdef&apos;,&apos;(&apos;)&#x8FD4;&#x56DE;&apos; (abcdef) &apos;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>&#x51FD;&#x6570;&#x8BED;&#x6CD5;</th>
+<th>&#x529F;&#x80FD;&#x63CF;&#x8FF0;</th>
+<th>&#x4E3E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REPLACE(str_expression1, str_expression2, str_expression3)</td>
+<td>&#x7528;&#x7B2C;&#x4E09;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;str_expression3&#x66FF;&#x6362;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;str_expression1&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6240;&#x6709;&#x7B2C;&#x4E8C;&#x4E2A;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;str_expression 2&#x7684;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x66FF;&#x6362;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</td>
+<td>REPLACE(&apos;abcdefghicde&apos;,&apos;cd&apos;,&apos;China&apos;)&#x8FD4;&#x56DE;&apos;abChinaefghiChinae&apos;&#x3002;</td>
+</tr>
+<tr>
+<td>REVERSE ( character_expression )</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x9996;&#x5C3E;&#x53CD;&#x8F6C;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x53CD;&#x8F6C;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>REVERSE(&apos;abcdefg&apos;)&#x8FD4;&#x56DE;&apos;gfedcba&apos;</td>
+</tr>
+<tr>
+<td>RIGHT(character_expression, integer_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;character_expression&#x4E2D;&#x4ECE;&#x53F3;&#x8FB9;&#x5F00;&#x59CB;&#x7684;integer_expression&#x4E2A;&#x5B57;&#x7B26;</td>
+<td>RIGHT(&apos;abcdef&apos;,3)&#x8FD4;&#x56DE;&apos;def&apos;</td>
+</tr>
+<tr>
+<td>RTRIM(character_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5220;&#x9664;&#x5C3E;&#x968F;&#x7A7A;&#x683C;&#x4E4B;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;</td>
+<td>RTRIM(&apos;   abcdef  &apos;)&#x8FD4;&#x56DE;&apos;   abcdef&apos;</td>
+</tr>
+<tr>
+<td>SPACE(integer_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x7531;integer_expression&#x4E2A;&#x7A7A;&#x683C;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>&apos;a&apos;+SPACE(4)+&apos;b&apos;&#x8FD4;&#x56DE;&apos;a    b&apos;</td>
+</tr>
+<tr>
+<td>STR(float_expression[,length[,] ] )</td>
+<td>&#x8FD4;&#x56DE;&#x7531;&#x6570;&#x5B57;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x6765;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x636E;</td>
+<td>STR(123.4588, 10, 4)&#x8FD4;&#x56DE;&apos;123.4588&apos;</td>
+</tr>
+<tr>
+<td>STUFF(character_expression,start,length,character_expression)</td>
+<td>&#x5728;&#x5B57;&#x7B26;&#x4E32;character_expression&#x4E2D;&#x4ECE;&#x4F4D;&#x7F6E;start&#x5F00;&#x59CB;&#x5220;&#x9664;start,length&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x7136;&#x540E;&#x53C8;&#x4ECE;&#x8BE5;&#x4F4D;&#x7F6E;&#x63D2;&#x5165;&#x5B57;&#x7B26;&#x4E32;character_expression&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x5904;&#x7406;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>STUFF(&apos;abcdefgh&apos;,2,3,&apos;xyz&apos;)&#x8FD4;&#x56DE;&apos;axyzefgh&apos;</td>
+</tr>
+<tr>
+<td>SUBSTRING(expression,start,length)</td>
+<td>&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x5B57;&#x7B26;expression&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x4E32;&#xFF0C;&#x8BE5;&#x5B50;&#x4E32;&#x662F;&#x4ECE;&#x4F4D;&#x7F6E;start&#x5F00;&#x59CB;&#x3001;&#x957F;&#x5EA6;&#x4E3A;length&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>SUBSTRING(&apos;abcdef&apos;,2, 4)&#x8FD4;&#x56DE;&apos;bcde&apos;</td>
+</tr>
+<tr>
+<td>UNICODE(&apos;ncharacter_expression&apos;)</td>
+<td>&#x6309;&#x7167;Unicode&#x6807;&#x51C6;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD4;&#x56DE;&#x8F93;&#x5165;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x6574;&#x6570;&#x503C;</td>
+<td>UNICODE(N&apos;&#xC5;kergatan 24&apos;)&#x8FD4;&#x56DE;197</td>
+</tr>
+<tr>
+<td>UPPER(character_expression)</td>
+<td>&#x8FD4;&#x56DE;&#x5C0F;&#x5199;&#x5B57;&#x7B26;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#x7684;&#x5B57;&#x7B26;&#x8868;&#x8FBE;&#x5F0F;</td>
+<td>UPPER(&apos;AbCdEfG&apos;)&#x8FD4;&#x56DE;&apos;ABCDEFG&apos;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#xFF08;1&#xFF09;ascii&#x51FD;&#x6570;">&#xFF08;1&#xFF09;ASCII&#x51FD;&#x6570;</h3>
+<pre><code class="lang-sql">        &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;
+                       ASCII ( character_expression )
+</code></pre>
+<p>character_expression&#x4E3A;char&#x6216;varchar&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x5176;&#x4F5C;&#x7528;&#x662F;&#x4EE5;int&#x7C7B;&#x578B;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;character_expression&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;ASCII&#x503C;&#x3002;</p>
+<pre><code class="lang-sql">    &#x3010;&#x4F8B;&#x5B50;&#x3011; ASCII (&apos;Abcd&apos;)&#x8FD4;&#x56DE;65&#xFF0C;ASCII (&apos;abcd&apos;)&#x8FD4;&#x56DE;97&#x7B49;&#xFF08;&apos;A&apos;&#x548C;&apos;a&apos;&#x7684;ASCII&#x503C;&#x5206;&#x522B;&#x4E3A;65&#x548C;97&#xFF09;&#x3002;
+</code></pre>
+<h3 id="&#xFF08;2&#xFF09;substring&#x51FD;&#x6570;">&#xFF08;2&#xFF09;SUBSTRING&#x51FD;&#x6570;</h3>
+<pre><code class="lang-sql">     &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;
+    SUBSTRING( expression ,<span class="hljs-keyword">start</span> , <span class="hljs-keyword">length</span> )
+</code></pre>
+<p>&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x8FD4;&#x56DE;&#x7ED9;&#x5B9A;&#x5B57;&#x7B26;expression&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x4E32;&#xFF0C;&#x8BE5;&#x5B50;&#x4E32;&#x662F;&#x4ECE;&#x4F4D;&#x7F6E;start&#x5F00;&#x59CB;&#x3001;&#x957F;&#x5EA6;&#x4E3A;length&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5176;&#x4E2D;&#xFF0C;expression&#x53EF;&#x4EE5;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6587;&#x672C;&#x3001;&#x56FE;&#x50CF;&#x3001;&#x5217;&#x6216;&#x5305;&#x542B;&#x5217;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x805A;&#x5408;&#x51FD;&#x6570;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;start , length&#x90FD;&#x662F;&#x6574;&#x578B;&#x6570;&#x636E;&#x3002;</p>
+<pre><code class="lang-sql">&#x3010;&#x4F8B;&#x5B50;&#x3011; SU BSTRING(&apos;abcdef&apos;,2, 4)&#x8FD4;&#x56DE;&apos;bcde&apos;&#xFF0C;SUBSTRING(&apos;abcdef&apos;,2, 1)&#x8FD4;&#x56DE;&apos;b&apos;&#x7B49;&#x3002;
+</code></pre>
+<h3 id="&#xFF08;3&#xFF09;left&#x51FD;&#x6570;">&#xFF08;3&#xFF09;LEFT&#x51FD;&#x6570;</h3>
+<pre><code class="lang-sql">    &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;    LEFT(character_expression, integer_expression)
+</code></pre>
+<p>&#x5176;&#x4F5C;&#x7528;&#x662F;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;character_expression&#x4E2D;&#x4ECE;&#x5DE6;&#x8FB9;&#x5F00;&#x59CB;&#x7684;integer_expression&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<pre><code class="lang-sql">&#x3010;&#x4F8B;&#x5B50;&#x3011; &#x6253;&#x5370;&#x5B66;&#x751F;&#x7684;&#x59D3;&#x6C0F;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x5217;&#x7684;&#x8BED;&#x53E5;&#x6765;&#x5B9E;&#x73B0;&#xFF08;&#x4E0D;&#x8003;&#x8651;&#x590D;&#x59D3;&#xFF09;&#xFF1A;
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">LEFT</span>(s_name,<span class="hljs-number">1</span>)
+<span class="hljs-keyword">FROM</span> student
+</code></pre>
+<h3 id="&#xFF08;4&#xFF09;replace&#x51FD;&#x6570;">&#xFF08;4&#xFF09;REPLACE&#x51FD;&#x6570;</h3>
+<pre><code>      &#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;
+    REPLACE(string_expression1 , string_expression2, string_expression3)
+</code></pre><p>&#x5176;&#x4F5C;&#x7528;&#x662F;&#x7528;&#x7B2C;&#x4E09;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;string_expression3&#x66FF;&#x6362;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;string_expression1&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6240;&#x6709;&#x7B2C;&#x4E8C;&#x4E2A;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;string_expression2&#x7684;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x66FF;&#x6362;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-sql">&#x3010;&#x4F8B;&#x5B50;&#x3011; <span class="hljs-keyword">REPLACE</span>(<span class="hljs-string">&apos;abcdefghicde&apos;</span>,<span class="hljs-string">&apos;cd&apos;</span>,<span class="hljs-string">&apos;China&apos;</span>)&#x5C06;&#x8FD4;&#x56DE;<span class="hljs-string">&apos;abChinaefghiChinae&apos;</span>&#x3002;
+</code></pre>
+<div id="gitalk-container"></div> 
+
+<p><footer class="page-footer"><span class="copyright">&#x8F6C;&#x8F7D;&#x6CE8;&#x660E;&#x51FA;&#x5904; &#xA9; Zander Zhao All Right Reserved; Powered By Gitbook</span><span class="footer-modification"><span id="busuanzi_container_page_pv">&#x672C;&#x6587;&#x603B;&#x9605;&#x8BFB;&#x91CF;<span id="busuanzi_value_page_pv"></span>&#x6B21;</span>; &#x6700;&#x65B0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-01-21 16:24:46
+</span></footer><script async src="//cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/busuanzi.pure.mini.js"></script></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11218.html" class="navigation navigation-prev " aria-label="Previous page: 字符串处理函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11219.html" class="navigation navigation-next " aria-label="Next page: 数学函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MSSQL","level":"2.4.2.3.1","depth":4,"next":{"title":"数学函数","level":"2.4.2.4","depth":3,"path":"books/11219.md","ref":"books/11219.md","articles":[{"title":"MSSQL","level":"2.4.2.4.1","depth":4,"path":"books/11281.md","ref":"books/11281.md","articles":[]}]},"previous":{"title":"字符串处理函数","level":"2.4.2.3","depth":3,"path":"books/11218.md","ref":"books/11218.md","articles":[{"title":"MSSQL","level":"2.4.2.3.1","depth":4,"path":"books/11280.md","ref":"books/11280.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","donate@git+https://github.com/plugins-zander/gitbook-plugin-donate.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","tbfed-pagefooter@git+https://github.com/plugins-zander/gitbook-plugin-tbfed-pagefooter.git","todo@git+https://github.com/plugins-zander/gitbook-plugin-todo.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"转载注明出处 &copy Zander Zhao","modify_bszlabel":"<span id=\"busuanzi_container_page_pv\">本文总阅读量<span id=\"busuanzi_value_page_pv\"></span>次</span>","modify_label":"最新修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"todo":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"donate":{"alipay":"https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/wechat.jpg","wechatText":"微信打赏"},"sitemap-general":{"prefix":"https://zlogs.net/learn-sql/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"编辑本页","base":"https://github.com/ZanderZhao/learn-sql/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-sql","language":"zh-hans","links":{"sidebar":{"# 博客":"https://zlogs.net","# 总目录":"https://zlogs.net/learn-books"}},"gitbook":"3.2.3","description":"learn-sql - Zander's Learn Book"},"file":{"path":"books/11280.md","mtime":"2020-01-21T16:24:46.822Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-21T16:26:10.555Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
