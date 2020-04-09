@@ -1,0 +1,5344 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MSSQL · learn-sql</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Zander Zhao">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/css/gitalk.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11345.html" />
+    
+    
+    <link rel="prev" href="11045.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">关系数据库应用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="11014.html">
+            
+                <a href="11014.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="11015.html">
+            
+                <a href="11015.html">
+            
+                    
+                    发展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="11261.html">
+            
+                <a href="11261.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="11127.html">
+            
+                <a href="11127.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="11128.html">
+            
+                <a href="11128.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="11134.html">
+            
+                <a href="11134.html">
+            
+                    
+                    原理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="11135.html">
+            
+                <a href="11135.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="11136.html">
+            
+                <a href="11136.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="11011.html">
+            
+                <a href="11011.html">
+            
+                    
+                    配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="11012.html">
+            
+                <a href="11012.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1.1" data-path="11201.html">
+            
+                <a href="11201.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.1.2" data-path="11202.html">
+            
+                <a href="11202.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="11013.html">
+            
+                <a href="11013.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.2.1" data-path="11203.html">
+            
+                <a href="11203.html">
+            
+                    
+                    2008
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.2" data-path="11204.html">
+            
+                <a href="11204.html">
+            
+                    
+                    2014
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.3" data-path="11247.html">
+            
+                <a href="11247.html">
+            
+                    
+                    2014组件和管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.4" data-path="11248.html">
+            
+                <a href="11248.html">
+            
+                    
+                    2008组件和管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2.5" data-path="11249.html">
+            
+                <a href="11249.html">
+            
+                    
+                    2008基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="11227.html">
+            
+                <a href="11227.html">
+            
+                    
+                    连接
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="11228.html">
+            
+                <a href="11228.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1.1" data-path="11237.html">
+            
+                <a href="11237.html">
+            
+                    
+                    W-2014界面-云端允许连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.2" data-path="11229.html">
+            
+                <a href="11229.html">
+            
+                    
+                    W-2008界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.3" data-path="11230.html">
+            
+                <a href="11230.html">
+            
+                    
+                    W-2014界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.4" data-path="11230.html">
+            
+                <a href="11230.html">
+            
+                    
+                    W-2014界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.5" data-path="11231.html">
+            
+                <a href="11231.html">
+            
+                    
+                    LW-DBeaver界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.6" data-path="11231.html">
+            
+                <a href="11231.html">
+            
+                    
+                    LW-DBeaver界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.7" data-path="11236.html">
+            
+                <a href="11236.html">
+            
+                    
+                    LW-Navicat界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.1.8" data-path="11236.html">
+            
+                <a href="11236.html">
+            
+                    
+                    LW-Navicat界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="11011.html">
+            
+                <a href="11011.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.2.1" data-path="11232.html">
+            
+                <a href="11232.html">
+            
+                    
+                    W-命令-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.2" data-path="11233.html">
+            
+                <a href="11233.html">
+            
+                    
+                    L-命令-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.3" data-path="11234.html">
+            
+                <a href="11234.html">
+            
+                    
+                    LW-DBeaver界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.4" data-path="11234.html">
+            
+                <a href="11234.html">
+            
+                    
+                    LW-Navicat界面-连本地
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.5" data-path="11235.html">
+            
+                <a href="11235.html">
+            
+                    
+                    LW-DBeaver界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.6" data-path="11235.html">
+            
+                <a href="11235.html">
+            
+                    
+                    LW-Navicat界面-连云端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2.7" data-path="11338.html">
+            
+                <a href="11338.html">
+            
+                    
+                    jdbc-mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="11016.html">
+            
+                <a href="11016.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="11137.html">
+            
+                <a href="11137.html">
+            
+                    
+                    标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.1" data-path="11308.html">
+            
+                <a href="11308.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.2" data-path="11138.html">
+            
+                <a href="11138.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.2.1" data-path="11309.html">
+            
+                <a href="11309.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.3" data-path="11139.html">
+            
+                <a href="11139.html">
+            
+                    
+                    预定义标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.3.1" data-path="11310.html">
+            
+                <a href="11310.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.1.4" data-path="11140.html">
+            
+                <a href="11140.html">
+            
+                    
+                    用户自定义标识符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.4.1" data-path="11311.html">
+            
+                <a href="11311.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1.4.1.1" data-path="11285.html">
+            
+                <a href="11285.html">
+            
+                    
+                    MSSQL变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.2" data-path="11141.html">
+            
+                <a href="11141.html">
+            
+                    
+                    行与缩进
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.2.1" data-path="11312.html">
+            
+                <a href="11312.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="11142.html">
+            
+                <a href="11142.html">
+            
+                    
+                    大小写
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.3.1" data-path="11313.html">
+            
+                <a href="11313.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.4" data-path="11143.html">
+            
+                <a href="11143.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.4.1" data-path="11314.html">
+            
+                <a href="11314.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.5" data-path="11144.html">
+            
+                <a href="11144.html">
+            
+                    
+                    编码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.5.1" data-path="11315.html">
+            
+                <a href="11315.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.6" data-path="11145.html">
+            
+                <a href="11145.html">
+            
+                    
+                    语句结束
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.6.1" data-path="11316.html">
+            
+                <a href="11316.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="11017.html">
+            
+                <a href="11017.html">
+            
+                    
+                    风格
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.6.1" data-path="11131.html">
+            
+                <a href="11131.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6.2" data-path="11132.html">
+            
+                <a href="11132.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="11146.html">
+            
+                <a href="11146.html">
+            
+                    
+                    元素
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="11147.html">
+            
+                <a href="11147.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="11205.html">
+            
+                <a href="11205.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="11206.html">
+            
+                <a href="11206.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="11148.html">
+            
+                <a href="11148.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.1" data-path="11252.html">
+            
+                <a href="11252.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2" data-path="11207.html">
+            
+                <a href="11207.html">
+            
+                    
+                    分类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.1" data-path="11208.html">
+            
+                <a href="11208.html">
+            
+                    
+                    数值型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.1.1" data-path="11238.html">
+            
+                <a href="11238.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.1.2" data-path="11239.html">
+            
+                <a href="11239.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.2" data-path="11209.html">
+            
+                <a href="11209.html">
+            
+                    
+                    字符串型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.2.1" data-path="11240.html">
+            
+                <a href="11240.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.2.2" data-path="11241.html">
+            
+                <a href="11241.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.3" data-path="11210.html">
+            
+                <a href="11210.html">
+            
+                    
+                    日期时间型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.3.1" data-path="11242.html">
+            
+                <a href="11242.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.3.2" data-path="11243.html">
+            
+                <a href="11243.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.4" data-path="11254.html">
+            
+                <a href="11254.html">
+            
+                    
+                    货币型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.4.1" data-path="11211.html">
+            
+                <a href="11211.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.5" data-path="11259.html">
+            
+                <a href="11259.html">
+            
+                    
+                    文本型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.5.1" data-path="11260.html">
+            
+                <a href="11260.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.6" data-path="11255.html">
+            
+                <a href="11255.html">
+            
+                    
+                    二进制型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.6.1" data-path="11212.html">
+            
+                <a href="11212.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.7" data-path="11256.html">
+            
+                <a href="11256.html">
+            
+                    
+                    其他数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.7.1" data-path="11213.html">
+            
+                <a href="11213.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.2.8" data-path="11257.html">
+            
+                <a href="11257.html">
+            
+                    
+                    自定义数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.2.8.1" data-path="11214.html">
+            
+                <a href="11214.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3" data-path="11215.html">
+            
+                <a href="11215.html">
+            
+                    
+                    常变
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.1" data-path="11216.html">
+            
+                <a href="11216.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.1.1" data-path="11285.html">
+            
+                <a href="11285.html">
+            
+                    
+                    MSSQL变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2.3.2" data-path="11217.html">
+            
+                <a href="11217.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.2.3.2.1" data-path="11286.html">
+            
+                <a href="11286.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="11190.html">
+            
+                <a href="11190.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="11189.html">
+            
+                <a href="11189.html">
+            
+                    
+                    MSSQL运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="11288.html">
+            
+                <a href="11288.html">
+            
+                    
+                    计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1" data-path="11289.html">
+            
+                <a href="11289.html">
+            
+                    
+                    算术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.1.1" data-path="11192.html">
+            
+                <a href="11192.html">
+            
+                    
+                    MSSQL算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2.2" data-path="11290.html">
+            
+                <a href="11290.html">
+            
+                    
+                    位操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.2.2.1" data-path="11193.html">
+            
+                <a href="11193.html">
+            
+                    
+                    MSSQL位操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="11291.html">
+            
+                <a href="11291.html">
+            
+                    
+                    判断
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1" data-path="11292.html">
+            
+                <a href="11292.html">
+            
+                    
+                    关系
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.1.1" data-path="11195.html">
+            
+                <a href="11195.html">
+            
+                    
+                    MSSQL关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3.2" data-path="11293.html">
+            
+                <a href="11293.html">
+            
+                    
+                    逻辑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.3.2.1" data-path="11196.html">
+            
+                <a href="11196.html">
+            
+                    
+                    MSSQL逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="11294.html">
+            
+                <a href="11294.html">
+            
+                    
+                    基本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1" data-path="11295.html">
+            
+                <a href="11295.html">
+            
+                    
+                    赋值
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.1.1" data-path="11225.html">
+            
+                <a href="11225.html">
+            
+                    
+                    MSSQL赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4.2" data-path="11296.html">
+            
+                <a href="11296.html">
+            
+                    
+                    字符串连接符
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.4.2.1" data-path="11226.html">
+            
+                <a href="11226.html">
+            
+                    
+                    MSSQL字符串连接符
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="11297.html">
+            
+                <a href="11297.html">
+            
+                    
+                    优先级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.5.1" data-path="11197.html">
+            
+                <a href="11197.html">
+            
+                    
+                    MSSQL优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="11191.html">
+            
+                <a href="11191.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.6.1" data-path="11194.html">
+            
+                <a href="11194.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6.2" data-path="11224.html">
+            
+                <a href="11224.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="11149.html">
+            
+                <a href="11149.html">
+            
+                    
+                    语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="11018.html">
+            
+                <a href="11018.html">
+            
+                    
+                    功能控制语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.1" data-path="11298.html">
+            
+                <a href="11298.html">
+            
+                    
+                    MSSQL功能控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2" data-path="11019.html">
+            
+                <a href="11019.html">
+            
+                    
+                    数据定义语言DDL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.1" data-path="11262.html">
+            
+                <a href="11262.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2" data-path="11150.html">
+            
+                <a href="11150.html">
+            
+                    
+                    创建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.1" data-path="11020.html">
+            
+                <a href="11020.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.1.1" data-path="11061.html">
+            
+                <a href="11061.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.1.2" data-path="11062.html">
+            
+                <a href="11062.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.2" data-path="11021.html">
+            
+                <a href="11021.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.2.1" data-path="11063.html">
+            
+                <a href="11063.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.2.2" data-path="11064.html">
+            
+                <a href="11064.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.3" data-path="11022.html">
+            
+                <a href="11022.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.3.1" data-path="11065.html">
+            
+                <a href="11065.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.3.2" data-path="11066.html">
+            
+                <a href="11066.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.4" data-path="11023.html">
+            
+                <a href="11023.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.4.1" data-path="11067.html">
+            
+                <a href="11067.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.4.2" data-path="11068.html">
+            
+                <a href="11068.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.5" data-path="11024.html">
+            
+                <a href="11024.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.5.1" data-path="11069.html">
+            
+                <a href="11069.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.5.2" data-path="11070.html">
+            
+                <a href="11070.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.6" data-path="11025.html">
+            
+                <a href="11025.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.6.1" data-path="11071.html">
+            
+                <a href="11071.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.6.2" data-path="11072.html">
+            
+                <a href="11072.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.2.7" data-path="11040.html">
+            
+                <a href="11040.html">
+            
+                    
+                    游标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.2.7.1" data-path="11275.html">
+            
+                <a href="11275.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3" data-path="11170.html">
+            
+                <a href="11170.html">
+            
+                    
+                    删除
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.1" data-path="11250.html">
+            
+                <a href="11250.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.1.1" data-path="11171.html">
+            
+                <a href="11171.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.1.2" data-path="11172.html">
+            
+                <a href="11172.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.2" data-path="11173.html">
+            
+                <a href="11173.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.2.1" data-path="11174.html">
+            
+                <a href="11174.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.2.2" data-path="11175.html">
+            
+                <a href="11175.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.3" data-path="11176.html">
+            
+                <a href="11176.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.3.1" data-path="11177.html">
+            
+                <a href="11177.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.3.2" data-path="11178.html">
+            
+                <a href="11178.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.4" data-path="11179.html">
+            
+                <a href="11179.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.4.1" data-path="11180.html">
+            
+                <a href="11180.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.4.2" data-path="11181.html">
+            
+                <a href="11181.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.5" data-path="11182.html">
+            
+                <a href="11182.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.5.1" data-path="11183.html">
+            
+                <a href="11183.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.5.2" data-path="11184.html">
+            
+                <a href="11184.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.6" data-path="11185.html">
+            
+                <a href="11185.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.3.6.1" data-path="11186.html">
+            
+                <a href="11186.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.3.6.2" data-path="11187.html">
+            
+                <a href="11187.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4" data-path="11151.html">
+            
+                <a href="11151.html">
+            
+                    
+                    修改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.1" data-path="11152.html">
+            
+                <a href="11152.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.1.1" data-path="11153.html">
+            
+                <a href="11153.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.1.2" data-path="11154.html">
+            
+                <a href="11154.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.2" data-path="11155.html">
+            
+                <a href="11155.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.2.1" data-path="11156.html">
+            
+                <a href="11156.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.2.2" data-path="11157.html">
+            
+                <a href="11157.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.3" data-path="11158.html">
+            
+                <a href="11158.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.3.1" data-path="11159.html">
+            
+                <a href="11159.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.3.2" data-path="11160.html">
+            
+                <a href="11160.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.4" data-path="11161.html">
+            
+                <a href="11161.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.4.1" data-path="11162.html">
+            
+                <a href="11162.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.4.2" data-path="11163.html">
+            
+                <a href="11163.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.5" data-path="11164.html">
+            
+                <a href="11164.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.5.1" data-path="11165.html">
+            
+                <a href="11165.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.5.2" data-path="11166.html">
+            
+                <a href="11166.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.6" data-path="11167.html">
+            
+                <a href="11167.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.4.6.1" data-path="11168.html">
+            
+                <a href="11168.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.4.6.2" data-path="11169.html">
+            
+                <a href="11169.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5" data-path="11319.html">
+            
+                <a href="11319.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.1" data-path="11320.html">
+            
+                <a href="11320.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.1.1" data-path="11321.html">
+            
+                <a href="11321.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.1.2" data-path="11322.html">
+            
+                <a href="11322.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.2" data-path="11323.html">
+            
+                <a href="11323.html">
+            
+                    
+                    表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.2.1" data-path="11324.html">
+            
+                <a href="11324.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.2.2" data-path="11325.html">
+            
+                <a href="11325.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.3" data-path="11326.html">
+            
+                <a href="11326.html">
+            
+                    
+                    索引
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.3.1" data-path="11327.html">
+            
+                <a href="11327.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.3.2" data-path="11328.html">
+            
+                <a href="11328.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.4" data-path="11329.html">
+            
+                <a href="11329.html">
+            
+                    
+                    视图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.4.1" data-path="11330.html">
+            
+                <a href="11330.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.4.2" data-path="11331.html">
+            
+                <a href="11331.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.5" data-path="11332.html">
+            
+                <a href="11332.html">
+            
+                    
+                    存储过程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.5.1" data-path="11333.html">
+            
+                <a href="11333.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.5.2" data-path="11334.html">
+            
+                <a href="11334.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.6" data-path="11335.html">
+            
+                <a href="11335.html">
+            
+                    
+                    触发器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.2.5.6.1" data-path="11336.html">
+            
+                <a href="11336.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.2.5.6.2" data-path="11337.html">
+            
+                <a href="11337.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3" data-path="11026.html">
+            
+                <a href="11026.html">
+            
+                    
+                    数据操纵语言DML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.1" data-path="11299.html">
+            
+                <a href="11299.html">
+            
+                    
+                    MSSQL数据操纵语言DML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.2" data-path="11027.html">
+            
+                <a href="11027.html">
+            
+                    
+                    插入--增
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.2.1" data-path="11263.html">
+            
+                <a href="11263.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.3" data-path="11029.html">
+            
+                <a href="11029.html">
+            
+                    
+                    删除--删
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.3.1" data-path="11265.html">
+            
+                <a href="11265.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.3.4" data-path="11028.html">
+            
+                <a href="11028.html">
+            
+                    
+                    更新--改
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.3.4.1" data-path="11264.html">
+            
+                <a href="11264.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4" data-path="11030.html">
+            
+                <a href="11030.html">
+            
+                    
+                    数据查询语言DQL--查
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.1" data-path="11300.html">
+            
+                <a href="11300.html">
+            
+                    
+                    MSSQL数据查询语言DQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.2" data-path="11031.html">
+            
+                <a href="11031.html">
+            
+                    
+                    SELECT
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.2.1" data-path="11266.html">
+            
+                <a href="11266.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3" data-path="11032.html">
+            
+                <a href="11032.html">
+            
+                    
+                    基本子句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.1" data-path="11267.html">
+            
+                <a href="11267.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.2" data-path="11033.html">
+            
+                <a href="11033.html">
+            
+                    
+                    FROM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.2.1" data-path="11268.html">
+            
+                <a href="11268.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.3" data-path="11034.html">
+            
+                <a href="11034.html">
+            
+                    
+                    WHERE
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1" data-path="11269.html">
+            
+                <a href="11269.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1.1" data-path="11274.html">
+            
+                <a href="11274.html">
+            
+                    
+                    MSSQL子查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.3.1.2" data-path="11273.html">
+            
+                <a href="11273.html">
+            
+                    
+                    MSSQL连接查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.4" data-path="11035.html">
+            
+                <a href="11035.html">
+            
+                    
+                    GROUP BY
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.4.1" data-path="11270.html">
+            
+                <a href="11270.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.5" data-path="11036.html">
+            
+                <a href="11036.html">
+            
+                    
+                    HAVING
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.5.1" data-path="11271.html">
+            
+                <a href="11271.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.6" data-path="11037.html">
+            
+                <a href="11037.html">
+            
+                    
+                    ORDER BY
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.6.1" data-path="11272.html">
+            
+                <a href="11272.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.3.7" data-path="11305.html">
+            
+                <a href="11305.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.3.7.1" data-path="11306.html">
+            
+                <a href="11306.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.4" data-path="11038.html">
+            
+                <a href="11038.html">
+            
+                    
+                    连接查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.4.1" data-path="11273.html">
+            
+                <a href="11273.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.4.5" data-path="11039.html">
+            
+                <a href="11039.html">
+            
+                    
+                    子查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.4.5.1" data-path="11274.html">
+            
+                <a href="11274.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5" data-path="11042.html">
+            
+                <a href="11042.html">
+            
+                    
+                    数据控制语言DCL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.1" data-path="11301.html">
+            
+                <a href="11301.html">
+            
+                    
+                    MSSQL数据控制语言DCL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.2" data-path="11043.html">
+            
+                <a href="11043.html">
+            
+                    
+                    事务管理与并发控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.2.1" data-path="11276.html">
+            
+                <a href="11276.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.3" data-path="11044.html">
+            
+                <a href="11044.html">
+            
+                    
+                    数据完整性管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.3.1" data-path="11277.html">
+            
+                <a href="11277.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.3.1.1" data-path="11339.html">
+            
+                <a href="11339.html">
+            
+                    
+                    数据完整性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.4" data-path="11045.html">
+            
+                <a href="11045.html">
+            
+                    
+                    数据安全性控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.4.1.5.4.1" data-path="11278.html">
+            
+                <a href="11278.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.5" data-path="11345.html">
+            
+                <a href="11345.html">
+            
+                    
+                    数据库备份、恢复、复制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.5.1" data-path="11046.html">
+            
+                <a href="11046.html">
+            
+                    
+                    MSSQL数据库备份、恢复、复制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.1.5.5.2" data-path="11244.html">
+            
+                <a href="11244.html">
+            
+                    
+                    数据库快照、分离、附加
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1.5.5.2.1" data-path="11245.html">
+            
+                <a href="11245.html">
+            
+                    
+                    MSSQL快照、分离、附加
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="11199.html">
+            
+                <a href="11199.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.1" data-path="11302.html">
+            
+                <a href="11302.html">
+            
+                    
+                    MSSQL函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.2" data-path="11200.html">
+            
+                <a href="11200.html">
+            
+                    
+                    聚合函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.2.1" data-path="11279.html">
+            
+                <a href="11279.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.3" data-path="11218.html">
+            
+                <a href="11218.html">
+            
+                    
+                    字符串处理函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.3.1" data-path="11280.html">
+            
+                <a href="11280.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.4" data-path="11219.html">
+            
+                <a href="11219.html">
+            
+                    
+                    数学函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.4.1" data-path="11281.html">
+            
+                <a href="11281.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.5" data-path="11220.html">
+            
+                <a href="11220.html">
+            
+                    
+                    日期时间函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.5.1" data-path="11282.html">
+            
+                <a href="11282.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.6" data-path="11221.html">
+            
+                <a href="11221.html">
+            
+                    
+                    数据类型转换函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.6.1" data-path="11283.html">
+            
+                <a href="11283.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.7" data-path="11222.html">
+            
+                <a href="11222.html">
+            
+                    
+                    用户自定义函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.7.1" data-path="11284.html">
+            
+                <a href="11284.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.8" data-path="11317.html">
+            
+                <a href="11317.html">
+            
+                    
+                    配置函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.8.1" data-path="11318.html">
+            
+                <a href="11318.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.9" data-path="11340.html">
+            
+                <a href="11340.html">
+            
+                    
+                    游标函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.9.1" data-path="11341.html">
+            
+                <a href="11341.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.10" data-path="11342.html">
+            
+                <a href="11342.html">
+            
+                    
+                    游标函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.10.1" data-path="11343.html">
+            
+                <a href="11343.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="11047.html">
+            
+                <a href="11047.html">
+            
+                    
+                    流程设计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.1" data-path="11303.html">
+            
+                <a href="11303.html">
+            
+                    
+                    MSSQL流程设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.2" data-path="11048.html">
+            
+                <a href="11048.html">
+            
+                    
+                    语句块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.2.1" data-path="11107.html">
+            
+                <a href="11107.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.2.2" data-path="11108.html">
+            
+                <a href="11108.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.3" data-path="11049.html">
+            
+                <a href="11049.html">
+            
+                    
+                    顺序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.3.1" data-path="11109.html">
+            
+                <a href="11109.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.3.2" data-path="11110.html">
+            
+                <a href="11110.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4" data-path="11050.html">
+            
+                <a href="11050.html">
+            
+                    
+                    选择
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.1" data-path="11051.html">
+            
+                <a href="11051.html">
+            
+                    
+                    条件语句--IF语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.1.1" data-path="11111.html">
+            
+                <a href="11111.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.1.2" data-path="11112.html">
+            
+                <a href="11112.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.2" data-path="11052.html">
+            
+                <a href="11052.html">
+            
+                    
+                    多重分支--CASE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.4.2.1" data-path="11113.html">
+            
+                <a href="11113.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.4.2.2" data-path="11114.html">
+            
+                <a href="11114.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5" data-path="11053.html">
+            
+                <a href="11053.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.1" data-path="11054.html">
+            
+                <a href="11054.html">
+            
+                    
+                    WHILE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.1.1" data-path="11115.html">
+            
+                <a href="11115.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.1.2" data-path="11116.html">
+            
+                <a href="11116.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.2" data-path="11055.html">
+            
+                <a href="11055.html">
+            
+                    
+                    BREAK/CONTINUE语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.5.2.1" data-path="11117.html">
+            
+                <a href="11117.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.5.2.2" data-path="11118.html">
+            
+                <a href="11118.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6" data-path="11056.html">
+            
+                <a href="11056.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.1" data-path="11057.html">
+            
+                <a href="11057.html">
+            
+                    
+                    无条件转移--GOTO语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.1.1" data-path="11119.html">
+            
+                <a href="11119.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.1.2" data-path="11120.html">
+            
+                <a href="11120.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.2" data-path="11058.html">
+            
+                <a href="11058.html">
+            
+                    
+                    返回语句--RETURN语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.2.1" data-path="11121.html">
+            
+                <a href="11121.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.2.2" data-path="11122.html">
+            
+                <a href="11122.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.3" data-path="11059.html">
+            
+                <a href="11059.html">
+            
+                    
+                    错误处理--TRY…CATCH语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.3.1" data-path="11123.html">
+            
+                <a href="11123.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.3.2" data-path="11124.html">
+            
+                <a href="11124.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.4" data-path="11060.html">
+            
+                <a href="11060.html">
+            
+                    
+                    等待语句--WAITFOR语句
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.3.6.4.1" data-path="11125.html">
+            
+                <a href="11125.html">
+            
+                    
+                    MSSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3.6.4.2" data-path="11126.html">
+            
+                <a href="11126.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="11344.html">
+            
+                <a href="11344.html">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="19999.html">
+            
+                <a href="19999.html">
+            
+                    
+                    end11346
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MSSQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mssql">MSSQL</h1>
+<h2 id="sql-server-2008&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;">SQL Server 2008&#x7684;&#x5B89;&#x5168;&#x673A;&#x5236;</h2>
+<h3 id="sql-server-2008&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;">SQL Server 2008&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;</h3>
+<p>SQL Server 2008&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x662F;&#x6307;&#x7CFB;&#x7EDF;&#x786E;&#x8BA4;&#x7528;&#x6237;&#x7684;&#x65B9;&#x5F0F;&#x3002;SQL Server 2008&#x6709;&#x4E24;&#x79CD;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#xFF1A;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x548C;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x3002;&#x5982;&#x56FE;9.1&#x6240;&#x793A;&#x4E3A;&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x767B;&#x5F55;SQL Server&#x670D;&#x52A1;&#x5668;&#x7684;&#x60C5;&#x5F62;&#x3002;</p>
+<p><img src="https://img1.zlogs.net/20/20200121224235.png" alt=""></p>
+<pre><code>1&#xFF0E;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;
+&#x7528;&#x6237;&#x767B;&#x5F55;Windows&#x65F6;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x767B;&#x5F55;SQL Server&#x65F6;&#x5C31;&#x4E0D;&#x518D;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5BF9;&#x4E8E;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x767B;&#x5F55;&#x7684;&#x51E0;&#x70B9;&#x91CD;&#x8981;&#x8BF4;&#x660E;&#x3002;
+&#xFF08;1&#xFF09;&#x5FC5;&#x987B;&#x5C06;Windows&#x8D26;&#x6237;&#x52A0;&#x5165;&#x5230;SQL Server&#x4E2D;&#xFF0C;&#x624D;&#x80FD;&#x91C7;&#x7528;Windows&#x8D26;&#x6237;&#x767B;&#x5F55;SQL Server&#x3002;
+&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x4F7F;&#x7528;Windows&#x8D26;&#x6237;&#x767B;&#x5F55;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7F51;&#x7EDC;&#x7684;SQL Server&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x5728;Windows&#x4E2D;&#x8BBE;&#x7F6E;&#x5F7C;&#x6B64;&#x7684;&#x6258;&#x7BA1;&#x6743;&#x9650;&#x3002;
+
+2&#xFF0E;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;
+&#x5728;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;SQL Server&#x670D;&#x52A1;&#x5668;&#x8981;&#x5BF9;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x5F53;SQL Server&#x5728;Windows XP&#x6216;Windows 2003/2008&#x7B49;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8BBE;&#x5B9A;&#x767B;&#x5F55;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x7684;&#x7C7B;&#x578B;&#x53EF;&#x4E3A;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x548C;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#x3002;&#x5F53;&#x91C7;&#x7528;&#x6DF7;&#x5408;&#x6A21;&#x5F0F;&#x65F6;&#xFF0C;SQL Server&#x7CFB;&#x7EDF;&#x65E2;&#x5141;&#x8BB8;&#x4F7F;&#x7528;Windows&#x767B;&#x5F55;&#x540D;&#x767B;&#x5F55;&#xFF0C;&#x4E5F;&#x5141;&#x8BB8;&#x4F7F;&#x7528;SQL Server&#x767B;&#x5F55;&#x540D;&#x767B;&#x5F55;&#x3002;
+</code></pre><h3 id="sql-server-2008&#x7684;&#x5B89;&#x5168;&#x6027;&#x673A;&#x5236;">SQL Server 2008&#x7684;&#x5B89;&#x5168;&#x6027;&#x673A;&#x5236;</h3>
+<pre><code>&#xFF08;1&#xFF09;&#x670D;&#x52A1;&#x5668;&#x7EA7;&#x522B;&#x6240;&#x5305;&#x542B;&#x7684;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x4E3B;&#x8981;&#x6709;&#x767B;&#x5F55;&#x540D;&#x3001;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x7B49;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x767B;&#x5F55;&#x540D;&#x7528;&#x4E8E;&#x767B;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x7528;&#x4E8E;&#x7ED9;&#x767B;&#x5F55;&#x540D;&#x8D4B;&#x4E88;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x5668;&#x6743;&#x9650;&#x3002;
+
+SQL Server 2008&#x4E2D;&#x7684;&#x767B;&#x5F55;&#x540D;&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD;&#x662F;Windows&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x7B2C;&#x4E8C;&#x79CD;&#x662F;SQL Server&#x767B;&#x5F55;&#x540D;&#x3002;
+
+Windows&#x767B;&#x5F55;&#x540D;&#x5BF9;&#x5E94;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#xFF0C;&#x8BE5;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x6240;&#x6D89;&#x53CA;&#x7684;&#x8D26;&#x6237;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x6709;Windows&#x672C;&#x5730;&#x7528;&#x6237;&#x8D26;&#x6237;&#x3001;Windows&#x57DF;&#x7528;&#x6237;&#x8D26;&#x6237;&#x3001;Windows&#x7EC4;&#x3002;
+
+SQL Server&#x767B;&#x5F55;&#x540D;&#x5BF9;&#x5E94;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#xFF0C;&#x5728;&#x8BE5;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x7684;&#x8D26;&#x6237;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x662F;SQL Server&#x8D26;&#x6237;&#x3002;
+
+&#xFF08;2&#xFF09;&#x6570;&#x636E;&#x5E93;&#x7EA7;&#x522B;&#x6240;&#x5305;&#x542B;&#x7684;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x4E3B;&#x8981;&#x6709;&#x7528;&#x6237;&#x3001;&#x89D2;&#x8272;&#x3001;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#x3001;&#x8BC1;&#x4E66;&#x3001;&#x5BF9;&#x79F0;&#x5BC6;&#x94A5;&#x3001;&#x975E;&#x5BF9;&#x79F0;&#x5BC6;&#x94A5;&#x3001;&#x7A0B;&#x5E8F;&#x96C6;&#x3001;&#x5168;&#x6587;&#x76EE;&#x5F55;&#x3001;DDL&#x4E8B;&#x4EF6;&#x3001;&#x67B6;&#x6784;&#x7B49;&#x3002;
+
+&#x7528;&#x6237;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x662F;&#x7528;&#x6765;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x3002;&#x5982;&#x679C;&#x67D0;&#x4EBA;&#x53EA;&#x62E5;&#x6709;&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4E3A;&#x5176;&#x521B;&#x5EFA;&#x767B;&#x5F55;&#x540D;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5219;&#x8BE5;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x767B;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;
+
+
+&#xFF08;3&#xFF09;&#x67B6;&#x6784;&#x7EA7;&#x522B;&#x6240;&#x5305;&#x542B;&#x7684;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x4E3B;&#x8981;&#x6709;&#x8868;&#x3001;&#x89C6;&#x56FE;&#x3001;&#x51FD;&#x6570;&#x3001;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x3001;&#x7C7B;&#x578B;&#x3001;&#x540C;&#x4E49;&#x8BCD;&#x3001;&#x805A;&#x5408;&#x51FD;&#x6570;&#x7B49;&#x3002;
+&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x67B6;&#x6784;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x5206;&#x6210;&#x4E0D;&#x540C;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x8FD9;&#x4E9B;&#x96C6;&#x5408;&#x6CA1;&#x6709;&#x4EA4;&#x96C6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x5C31;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x67B6;&#x6784;&#x3002;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x90FD;&#x4F1A;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x3002;&#x8FD9;&#x4E2A;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x53EF;&#x4EE5;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x65F6;&#x7531;&#x521B;&#x5EFA;&#x8005;&#x8BBE;&#x5B9A;&#xFF0C;&#x82E5;&#x4E0D;&#x8BBE;&#x5B9A;&#x5219;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x4E3A;dbo&#x3002;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x5BF9;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x67B6;&#x6784;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x3002;&#x81F3;&#x4E8E;&#x64CD;&#x4F5C;&#x7684;&#x6743;&#x9650;&#x5219;&#x7531;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x51B3;&#x5B9A;&#x3002;
+
+&#x4F8B;&#x5982;&#xFF0C;&#x82E5;&#x67D0;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;A&#x5C5E;&#x4E8E;&#x67B6;&#x6784;S1&#xFF0C;&#x8868;B&#x5C5E;&#x4E8E;&#x67B6;&#x6784;S2&#xFF0C;&#x800C;&#x67D0;&#x7528;&#x6237;&#x9ED8;&#x8BA4;&#x7684;&#x67B6;&#x6784;&#x4E3A;S2&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6388;&#x4E88;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x8868;A&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5219;&#x8BE5;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x5BF9;&#x8868;A&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8BE5;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5BF9;&#x8868;B&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x3002;
+
+&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x8005;&#xFF0C;&#x8981;&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;SQL Server&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5E76;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x6267;&#x884C;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF0C;&#x5219;&#x8BE5;&#x4F7F;&#x7528;&#x8005;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x5982;&#x56FE;9.2&#x6240;&#x793A;&#x7684;&#x5B89;&#x5168;&#x9A8C;&#x8BC1;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224236.png" alt=""></p>
+<p>&#x56FE;9.2  SQL Server&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x9A8C;&#x8BC1;</p>
+<h2 id="&#x5EFA;&#x7ACB;&#x548C;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;">&#x5EFA;&#x7ACB;&#x548C;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;</h2>
+<h3 id="&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;">&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;</h3>
+<pre><code>
+1&#xFF0E;&#x5EFA;&#x7ACB;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x7684;&#x767B;&#x5F55;&#x540D;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x521B;&#x5EFA;Windows&#x7684;&#x7528;&#x6237;&#x3002;
+&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;Windows XP&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x5F00;&#x59CB;&#x201D;&#xFF0C;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x9762;&#x677F;&#x4E2D;&#x7684;&#x201C;&#x6027;&#x80FD;&#x548C;&#x7EF4;        &#x62A4;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x5176;&#x4E2D;&#x7684;&#x201C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x201D;&#xFF0C;&#x53CC;&#x51FB;&#x201C;&#x8BA1;&#x7B97;&#x673A;&#x7BA1;&#x7406;&#x201D;&#xFF0C;&#x8FDB;&#x5165;&#x201C;&#x8BA1;&#x7B97;&#x673A;&#x7BA1;&#x7406;&#x201D;&#x7A97;&#x53E3;&#x3002;
+&#x5728;&#x8BE5;&#x7A97;&#x53E3;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x672C;&#x5730;&#x7528;&#x6237;&#x548C;&#x7EC4;&#x201D;&#x4E2D;&#x7684;&#x201C;&#x7528;&#x6237;&#x201D;&#x56FE;&#x6807;&#xFF0C;&#x53F3;&#x51FB;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9; &#x201C;&#x65B0;&#x7528;&#x6237;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x65B0;&#x7528;&#x6237;&#x201D;&#x7A97;&#x53E3;&#x3002;&#x5982;&#x56FE;9.3&#x6240;&#x793A;&#xFF0C;&#x5728;&#x8BE5;&#x7A97;&#x53E3;&#x4E2D;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x521B;&#x5EFA;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x7136;&#x540E;&#x5355;&#x51FB;&#x201C;&#x5173;&#x95ED;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5B8C;&#x6210;&#x65B0;&#x7528;&#x6237;&#x7684;&#x521B;&#x5EFA;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224237.png" alt=""></p>
+<pre><code>&#x7B2C;2&#x6B65;&#xFF1A;&#x5C06;Windows&#x8D26;&#x6237;&#x52A0;&#x5165;&#x5230;SQL Server&#x4E2D;&#x3002;
+&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;SQL Server Management Studio&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#xFF0C;&#x627E;&#x5230;&#x5E76;&#x9009;&#x62E9;&#x5982;&#x56FE;9.4&#x6240;&#x793A;&#x7684;&#x201C;&#x767B;&#x5F55;&#x540D;&#x201D;&#x9879;&#x3002;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x767B;&#x5F55;&#x540D;&#x201D;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x767B;&#x5F55;&#x540D;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224238.png" alt=""></p>
+<pre><code>&#x5982;&#x56FE;9.5&#x6240;&#x793A;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5355;&#x51FB;&#x201C;&#x5E38;&#x89C4;&#x201D;&#x9009;&#x9879;&#x5361;&#x7684;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x201C;&#x9009;&#x62E9;&#x7528;&#x6237;&#x6216;&#x7EC4;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x9009;&#x62E9;&#x76F8;&#x5E94;&#x7684;&#x7528;&#x6237;&#x540D;&#x6216;&#x7528;&#x6237;&#x7EC4;&#x5E76;&#x6DFB;&#x52A0;&#x5230;SQL Server 2008&#x767B;&#x5F55;&#x7528;&#x6237;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x672C;&#x4F8B;&#x7684;&#x7528;&#x6237;&#x540D;&#x4E3A;0BD7E57C949A420\liu&#xFF08;0BD7E57C949A420&#x4E3A;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x540D;&#xFF09;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224239.png" alt=""></p>
+<pre><code>2&#xFF0E;&#x5EFA;&#x7ACB;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x7684;&#x767B;&#x5F55;&#x540D;
+&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x3002;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server Management Studio&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x9009;&#x62E9;&#x8981;&#x767B;&#x5F55;&#x7684;SQL Server&#x670D;&#x52A1;&#x5668;&#x56FE;&#x6807;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x670D;&#x52A1;&#x5668;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#x3002;
+&#x7B2C;2&#x6B65;&#xFF1A;&#x5728;&#x6253;&#x5F00;&#x7684;&#x201C;&#x670D;&#x52A1;&#x5668;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x5B89;&#x5168;&#x6027;&#x201D;&#x9009;&#x9879;&#x5361;&#x3002;&#x9009;&#x62E9;&#x670D;&#x52A1;&#x5668;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x4E3A;&#x201C;SQL Server&#x548C;Windows&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x201D;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x4FDD;&#x5B58;&#x65B0;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x91CD;&#x542F;SQL Server&#x670D;&#x52A1;&#x5373;&#x53EF;&#x3002;
+&#x521B;&#x5EFA;SQL Server&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x7684;&#x767B;&#x5F55;&#x540D;&#x4E5F;&#x5728;&#x5982;&#x56FE;9.5&#x6240;&#x793A;&#x7684;&#x754C;&#x9762;&#x4E2D;&#x8FDB;&#x884C;&#xFF0C;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x4F8B;&#x5982;david&#xFF0C;&#x9009;&#x4E2D;&#x201C;SQL Server&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x201D;&#x9009;&#x9879;&#xFF0C;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5E76;&#x5C06;&#x201C;&#x5F3A;&#x5236;&#x5BC6;&#x7801;&#x8FC7;&#x671F;&#x201D;&#x590D;&#x9009;&#x6846;&#x4E2D;&#x7684;&#x52FE;&#x53BB;&#x6389;&#xFF0C;&#x8BBE;&#x7F6E;&#x5B8C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5373;&#x53EF;&#x3002;
+
+&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x521B;&#x5EFA;&#x7684;&#x767B;&#x5F55;&#x540D;&#x80FD;&#x5426;&#x8FDE;&#x63A5;SQL Server&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65B0;&#x5EFA;&#x7684;&#x767B;&#x5F55;&#x540D;david&#x6765;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;
+&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x7A97;&#x53E3;&#x4E2D;&#x5355;&#x51FB;&#x201C;&#x8FDE;&#x63A5;&#x201D;&#xFF0C;&#x5728;&#x4E0B;&#x62C9;&#x6846;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x201D;&#xFF0C;&#x5F39;&#x51FA;&#x201C;&#x8FDE;&#x63A5;&#x5230;&#x670D;&#x52A1;&#x5668;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x3002;&#x5728;&#x8BE5;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#xFF0C;&#x201C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x201D;&#x9009;&#x62E9;&#x201C;SQL Server&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x201D;&#xFF0C;&#x201C;&#x767B;&#x5F55;&#x540D;&#x201D;&#x586B;&#x5199;david&#xFF0C;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x8FDE;&#x63A5;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x80FD;&#x8FDE;&#x63A5;SQL Server&#x4E86;&#x3002;&#x767B;&#x5F55;&#x540E;&#x7684;&#x201C;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x201D;&#x754C;&#x9762;&#x5982;&#x56FE;9.6&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224240.png" alt=""></p>
+<pre><code>3&#xFF0E;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;
+&#x4F7F;&#x7528;SSMS&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x8D26;&#x6237;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF08;&#x4EE5;PXSCJ&#x4E3A;&#x4F8B;&#xFF09;&#xFF1A;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FDE;&#x63A5;SQL Server&#xFF0C;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x2192;&#x5B89;&#x5168;&#x6027;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x7528;&#x6237;&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x7528;&#x6237;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x8FDB;&#x5165;&#x201C;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x3002;&#x5728;&#x201C;&#x7528;&#x6237;&#x540D;&#x201D;&#x6846;&#x4E2D;&#x586B;&#x5199;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x201C;&#x767B;&#x5F55;&#x540D;&#x201D;&#x6846;&#x4E2D;&#x586B;&#x5199;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x767B;&#x5F55;SQL Server&#x7684;&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x5982;david&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x540D;&#x5728;&#x672C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x53EA;&#x80FD;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x3002;&#x9009;&#x62E9;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x4E3A;dbo&#xFF0C;&#x5982;&#x56FE;9.7&#x6240;&#x793A;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5B8C;&#x6210;&#x521B;&#x5EFA;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224241.png" alt=""></p>
+<h3 id="&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;">&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x8D26;&#x6237;</h3>
+<pre><code class="lang-sql">1&#xFF0E;&#x521B;&#x5EFA;&#x767B;&#x5F55;&#x540D;
+&#x5728;SQL Server 2008&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x767B;&#x5F55;&#x540D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<span class="hljs-keyword">CREATE</span> LOGIN&#x547D;&#x4EE4;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+<span class="hljs-keyword">CREATE</span> LOGIN login_name 
+{      <span class="hljs-keyword">WITH</span> <span class="hljs-keyword">PASSWORD</span> = <span class="hljs-string">&apos;password&apos;</span> [ HASHED ] [ MUST_CHANGE ]
+        [ , &lt;option_list&gt; [ ,... ] ]                    <span class="hljs-comment">/*WITH&#x5B50;&#x53E5;&#x7528;&#x4E8E;&#x521B;&#x5EFA;SQL Server&#x767B;&#x5F55;&#x540D;*/</span>
+    | <span class="hljs-keyword">FROM</span>                                <span class="hljs-comment">/*FROM&#x5B50;&#x53E5;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5176;&#x4ED6;&#x767B;&#x5F55;&#x540D;*/</span>
+     {
+     &#x2005;      WINDOWS [ <span class="hljs-keyword">WITH</span> &lt;windows_options&gt; [ ,... ] ]
+          | CERTIFICATE certname
+         | ASYMMETRIC <span class="hljs-keyword">KEY</span> asym_key_name
+     }
+}
+
+&#x5176;&#x4E2D;&#xFF0C;
+&lt;option_list&gt; ::=  
+     <span class="hljs-keyword">SID</span> = <span class="hljs-keyword">sid</span>
+    | DEFAULT_DATABASE = <span class="hljs-keyword">database</span>    
+    | DEFAULT_LANGUAGE = <span class="hljs-keyword">language</span>
+    | CHECK_EXPIRATION = { <span class="hljs-keyword">ON</span> | <span class="hljs-keyword">OFF</span>}
+    | CHECK_POLICY = { <span class="hljs-keyword">ON</span> | <span class="hljs-keyword">OFF</span>}
+    [ CREDENTIAL = credential_name ]
+
+&lt;windows_options&gt; ::=      
+     DEFAULT_DATABASE = <span class="hljs-keyword">database</span>
+    | DEFAULT_LANGUAGE = <span class="hljs-keyword">language</span>
+
+&#xFF08;<span class="hljs-number">1</span>&#xFF09;&#x521B;&#x5EFA;Windows&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x767B;&#x5F55;&#x540D;&#x3002;&#x521B;&#x5EFA;Windows&#x767B;&#x5F55;&#x540D;&#x4F7F;&#x7528;<span class="hljs-keyword">FROM</span>&#x5B50;&#x53E5;&#xFF0C;&#x5728;<span class="hljs-keyword">FROM</span>&#x5B50;&#x53E5;&#x7684;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#x4E2D;&#xFF0C;WINDOWS&#x5173;&#x952E;&#x5B57;&#x6307;&#x5B9A;&#x5C06;&#x767B;&#x5F55;&#x540D;&#x6620;&#x5C04;&#x5230;Windows&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;&lt;windows_options&gt;&#x4E3A;&#x521B;&#x5EFA;Windows&#x767B;&#x5F55;&#x540D;&#x7684;&#x9009;&#x9879;&#xFF0C;DEFAULT_DATABASE&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#xFF0C;DEFAULT_LANGUAGE&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#x3002;
+&#x3010;&#x4F8B;<span class="hljs-number">9.1</span>&#x3011;  &#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;Windows&#x767B;&#x5F55;&#x540D;tao&#xFF08;&#x5047;&#x8BBE;Windows&#x7528;&#x6237;tao&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF0C;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x540D;&#x4E3A;<span class="hljs-number">0</span>BD7E57C949A420&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x4E3A;PXSCJ&#x3002;
+<span class="hljs-keyword">USE</span> <span class="hljs-keyword">master</span>
+<span class="hljs-keyword">GO</span>
+<span class="hljs-keyword">CREATE</span> LOGIN [<span class="hljs-number">0</span>BD7E57C949A420\tao]
+    <span class="hljs-keyword">FROM</span> WINDOWS 
+        <span class="hljs-keyword">WITH</span> DEFAULT_DATABASE= PXSCJ
+
+&#xFF08;<span class="hljs-number">2</span>&#xFF09;&#x521B;&#x5EFA;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x767B;&#x5F55;&#x540D;&#x3002;&#x521B;&#x5EFA;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;&#x4F7F;&#x7528;<span class="hljs-keyword">WITH</span>&#x5B50;&#x53E5;&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;
+&#x2460; <span class="hljs-keyword">PASSWORD</span>&#xFF1A;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x6B63;&#x5728;&#x521B;&#x5EFA;&#x7684;&#x767B;&#x5F55;&#x540D;&#x7684;&#x5BC6;&#x7801;&#xFF0C;<span class="hljs-keyword">password</span>&#x4E3A;&#x5BC6;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#x3002;HASHED &#x9009;&#x9879;&#x6307;&#x5B9A;&#x5728;<span class="hljs-keyword">PASSWORD</span>&#x53C2;&#x6570;&#x540E;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x5DF2;&#x7ECF;&#x8FC7;&#x54C8;&#x5E0C;&#x8FD0;&#x7B97;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x9009;&#x62E9;&#x6B64;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x5728;&#x5C06;&#x4F5C;&#x4E3A;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x524D;&#xFF0C;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x8FD0;&#x7B97;&#x3002;&#x5982;&#x679C;&#x6307;&#x5B9A;MUST_CHANGE&#x9009;&#x9879;&#xFF0C;&#x5219;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x4F1A;&#x5728;&#x9996;&#x6B21;&#x4F7F;&#x7528;&#x65B0;&#x767B;&#x5F55;&#x540D;&#x65F6;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x65B0;&#x5BC6;&#x7801;&#x3002;
+&#x2461; &lt;option_list&gt;&#xFF1A;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5728;&#x521B;&#x5EFA;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;&#x65F6;&#x7684;&#x4E00;&#x4E9B;&#x9009;&#x9879;&#xFF0C;&#x9009;&#x9879;&#x5982;&#x4E0B;&#x3002;
+<span class="hljs-keyword">SID</span>&#xFF1A;&#x6307;&#x5B9A;&#x65B0;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;&#x7684;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x9009;&#x62E9;&#x6B64;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x81EA;&#x52A8;&#x6307;&#x6D3E;&#x3002;
+DEFAULT_DATABASE&#xFF1A;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x6B64;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#x5C06;&#x8BBE;&#x7F6E;&#x4E3A;<span class="hljs-keyword">master</span>&#x3002;
+DEFAULT_LANGUAGE&#xFF1A;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x6307;&#x5B9A;&#x6B64;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#x5C06;&#x8BBE;&#x7F6E;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5F53;&#x524D;&#x9ED8;&#x8BA4;&#x8BED;&#x8A00;&#x3002;
+CHECK_EXPIRATION&#xFF1A;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5BF9;&#x6B64;&#x767B;&#x5F55;&#x540D;&#x5F3A;&#x5236;&#x5B9E;&#x65BD;&#x5BC6;&#x7801;&#x8FC7;&#x671F;&#x7B56;&#x7565;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<span class="hljs-keyword">OFF</span>&#x3002;
+CHECK_POLICY&#xFF1A;&#x6307;&#x5B9A;&#x5E94;&#x5BF9;&#x6B64;&#x767B;&#x5F55;&#x540D;&#x5F3A;&#x5236;&#x5B9E;&#x65BD;&#x8FD0;&#x884C;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x7684;Windows&#x5BC6;&#x7801;&#x7B56;&#x7565;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<span class="hljs-keyword">ON</span>&#x3002; 
+
+&#x3010;&#x4F8B;<span class="hljs-number">9.2</span>&#x3011;  &#x521B;&#x5EFA;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;sql_tao&#xFF0C;&#x5BC6;&#x7801;&#x4E3A;<span class="hljs-number">123456</span>&#xFF0C;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x4E3A;PXSCJ&#x3002;
+<span class="hljs-keyword">CREATE</span> LOGIN sql_tao
+    <span class="hljs-keyword">WITH</span> <span class="hljs-keyword">PASSWORD</span>=<span class="hljs-string">&apos;123456&apos;</span>,
+        DEFAULT_DATABASE=PXSCJ
+
+<span class="hljs-number">2</span>&#xFF0E;&#x5220;&#x9664;&#x767B;&#x5F55;&#x540D;
+&#x5220;&#x9664;&#x767B;&#x5F55;&#x540D;&#x4F7F;&#x7528;<span class="hljs-keyword">DROP</span> LOGIN&#x547D;&#x4EE4;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+<span class="hljs-keyword">DROP</span> LOGIN login_name
+&#x3010;&#x4F8B;<span class="hljs-number">9.3</span>&#x3011;  &#x5220;&#x9664;Windows&#x767B;&#x5F55;&#x540D;tao&#x3002;
+<span class="hljs-keyword">DROP</span> LOGIN [<span class="hljs-number">0</span>BD7E57C949A420\tao]
+&#x3010;&#x4F8B;<span class="hljs-number">9.4</span>&#x3011;  &#x5220;&#x9664;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;sql_tao&#x3002;
+<span class="hljs-keyword">DROP</span> LOGIN sql_tao
+
+<span class="hljs-number">3</span>&#xFF0E;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;
+&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x4F7F;&#x7528;<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span>&#x547D;&#x4EE4;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> user_name     
+[{ <span class="hljs-keyword">FOR</span> | <span class="hljs-keyword">FROM</span> }
+      { 
+         LOGIN login_name 
+        | CERTIFICATE cert_name 
+        | ASYMMETRIC <span class="hljs-keyword">KEY</span> asym_key_name
+      } 
+      | <span class="hljs-keyword">WITHOUT</span> LOGIN
+]
+    [ <span class="hljs-keyword">WITH</span> DEFAULT_SCHEMA = schema_name ]
+&#x3010;&#x4F8B;<span class="hljs-number">9.5</span>&#x3011;  &#x4F7F;&#x7528;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#x767B;&#x5F55;&#x540D;sql_tao&#xFF08;&#x5047;&#x8BBE;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF09;&#x5728;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;tao&#xFF0C;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x540D;&#x4F7F;&#x7528;dbo&#x3002;
+<span class="hljs-keyword">USE</span> PXSCJ
+<span class="hljs-keyword">GO</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> tao
+    <span class="hljs-keyword">FOR</span> LOGIN sql_tao
+    <span class="hljs-keyword">WITH</span> DEFAULT_SCHEMA=dbo
+
+<span class="hljs-number">4</span>&#xFF0E;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;
+&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x4F7F;&#x7528;<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">USER</span>&#x8BED;&#x53E5;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">USER</span> user_name
+user_name&#x4E3A;&#x8981;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5728;&#x5220;&#x9664;&#x4E4B;&#x524D;&#x8981;&#x4F7F;&#x7528;<span class="hljs-keyword">USE</span>&#x8BED;&#x53E5;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x3002;
+&#x3010;&#x4F8B;<span class="hljs-number">9.6</span>&#x3011;  &#x5220;&#x9664;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;tao&#x3002;
+<span class="hljs-keyword">USE</span> PXSCJ
+<span class="hljs-keyword">GO</span>
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">USER</span> tao
+</code></pre>
+<h2 id="&#x89D2;&#x8272;&#x7BA1;&#x7406;">&#x89D2;&#x8272;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;">&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;</h3>
+<pre><code>
+&#xFF08;1&#xFF09;sysadmin&#xFF1A;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x5BF9;SQL Server&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x6240;&#x6709;&#x7684;&#x7BA1;&#x7406;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E3A;&#x6700;&#x9AD8;&#x7BA1;&#x7406;&#x89D2;&#x8272;&#x3002;&#x8FD9;&#x4E2A;&#x89D2;&#x8272;&#x4E00;&#x822C;&#x9002;&#x5408;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#xFF08;DBA&#xFF09;&#x3002;
+&#xFF08;2&#xFF09;securityadmin&#xFF1A;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x7BA1;&#x7406;&#x767B;&#x5F55;&#x540D;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x3002;&#x53EF;&#x4EE5;&#x6388;&#x4E88;&#x3001;&#x62D2;&#x7EDD;&#x3001;&#x64A4;&#x9500;&#x670D;&#x52A1;&#x5668;&#x7EA7;&#x548C;&#x6570;&#x636E;&#x5E93;&#x7EA7;&#x7684;&#x6743;&#x9650;&#x3002;&#x53E6;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x91CD;&#x7F6E;SQL Server&#x767B;&#x5F55;&#x540D;&#x7684;&#x5BC6;&#x7801;&#x3002;
+&#xFF08;3&#xFF09;serveradmin&#xFF1A;&#x670D;&#x52A1;&#x5668;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x5177;&#x6709;&#x5BF9;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x53CA;&#x5173;&#x95ED;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6743;&#x9650;&#x3002;
+&#xFF08;4&#xFF09;setupadmin&#xFF1A;&#x8BBE;&#x7F6E;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x94FE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x3002;
+&#xFF08;5&#xFF09;processadmin&#xFF1A;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x7EC8;&#x6B62;SQL Server&#x5B9E;&#x4F8B;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x3002;
+&#xFF08;6&#xFF09;diskadmin&#xFF1A;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x3002;
+&#xFF08;7&#xFF09;dbcreator&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x3001;&#x66F4;&#x6539;&#x3001;&#x5220;&#x9664;&#x6216;&#x8FD8;&#x539F;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x5E93;&#x3002;
+&#xFF08;8&#xFF09;bulkadmin&#xFF1A;&#x53EF;&#x6267;&#x884C;BULK INSERT&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x6210;&#x5458;&#x5BF9;&#x8981;&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684;&#x8868;&#x5FC5;&#x987B;&#x6709;INSERT&#x6743;&#x9650;&#x3002;BULK INSERT&#x8BED;&#x53E5;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4EE5;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7684;&#x683C;&#x5F0F;&#x590D;&#x5236;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x81F3;&#x6570;&#x636E;&#x5E93;&#x8868;&#x6216;&#x89C6;&#x56FE;&#x3002;
+&#xFF08;9&#xFF09;public&#xFF1A;&#x5176;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x5E93;&#x3002;
+
+1&#xFF0E;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x6DFB;&#x52A0;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x5B89;&#x5168;&#x6027;&#x2192;&#x767B;&#x5F55;&#x540D;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#x201C;0BD7E57C949A420\liu&#x201D;&#xFF0C;&#x53CC;&#x51FB;&#x6216;&#x53F3;&#x51FB;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x767B;&#x5F55;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#x3002;
+&#x7B2C;2&#x6B65;&#xFF1A;&#x5728;&#x6253;&#x5F00;&#x7684;&#x201C;&#x767B;&#x5F55;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x201D;&#x9009;&#x9879;&#x5361;&#x3002;&#x5982;&#x56FE;9.8&#x6240;&#x793A;&#xFF0C;&#x5728;&#x201C;&#x767B;&#x5F55;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#x53F3;&#x8FB9;&#x5217;&#x51FA;&#x4E86;&#x6240;&#x6709;&#x7684;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#xFF0C;&#x5728;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x524D;&#x7684;&#x590D;&#x9009;&#x6846;&#x4E2D;&#x6253;&#x52FE;&#xFF0C;&#x6765;&#x4E3A;&#x767B;&#x5F55;&#x540D;&#x6DFB;&#x52A0;&#x76F8;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#xFF0C;&#x6B64;&#x5904;&#x9ED8;&#x8BA4;&#x5DF2;&#x7ECF;&#x9009;&#x62E9;&#x4E86;&#x201C;public&#x201D;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x3002;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5B8C;&#x6210;&#x6DFB;&#x52A0;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224242.png" alt=""></p>
+<pre><code>2&#xFF0E;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x6DFB;&#x52A0;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;sp_addsrvrolemember&#x53EF;&#x5C06;&#x4E00;&#x767B;&#x5F55;&#x540D;&#x6DFB;&#x52A0;&#x5230;&#x67D0;&#x4E00;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x4E2D;&#xFF0C;&#x4F7F;&#x5176;&#x6210;&#x4E3A;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+sp_addsrvrolemember [ @loginame = ] &apos;login&apos;,  [@rolename =] &apos;role&apos;
+&#x53C2;&#x6570;&#x542B;&#x4E49;&#xFF1A;login&#x6307;&#x5B9A;&#x6DFB;&#x52A0;&#x5230;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;role&#x7684;&#x767B;&#x5F55;&#x540D;&#xFF0C;login&#x53EF;&#x4EE5;&#x662F;SQL Server&#x767B;&#x5F55;&#x540D;&#x6216;Windows &#x767B;&#x5F55;&#x540D;&#xFF1B;&#x5BF9;&#x4E8E;Windows&#x767B;&#x5F55;&#x540D;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x6CA1;&#x6709;&#x6388;&#x4E88;SQL Server&#x8BBF;&#x95EE;&#x6743;&#x9650;&#xFF0C;&#x5C06;&#x81EA;&#x52A8;&#x5BF9;&#x5176;&#x6388;&#x4E88;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3002;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x540D;role&#x5FC5;&#x987B;&#x4E3A;sysadmin&#x3001;securityadmin&#x3001;serveradmin&#x3001;setupadmin&#x3001;processadmin&#x3001;diskadmin&#x3001;dbcreator&#x3001;bulkadmin&#x548C;public&#x4E4B;&#x4E00;&#x3002;
+&#x3010;&#x4F8B;9.7&#x3011;  &#x5C06;Windows&#x767B;&#x5F55;&#x540D;0BD7E57C949A420\liu&#x6DFB;&#x52A0;&#x5230;sysadmin&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x4E2D;&#x3002;
+EXEC sp_addsrvrolemember &apos;0BD7E57C949A420\liu&apos;, &apos;sysadmin&apos;
+
+3&#xFF0E;&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5220;&#x9664;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x5229;&#x7528;sp_dropsrvrolemember&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x53EF;&#x4ECE;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x4E2D;&#x5220;&#x9664;SQL Server &#x767B;&#x5F55;&#x540D;&#x6216;Windows&#x767B;&#x5F55;&#x540D;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+sp_dropsrvrolemember[ @loginame = ] &apos;login&apos; , [ @rolename = ] &apos;role&apos;
+&#x53C2;&#x6570;&#x542B;&#x4E49;&#xFF1A;&apos;login&apos;&#x4E3A;&#x5C06;&#x8981;&#x4ECE;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x5220;&#x9664;&#x7684;&#x767B;&#x5F55;&#x540D;&#x3002;&apos;role&apos;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;NULL&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x6709;&#x6548;&#x7684;&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x540D;&#x3002; 
+&#x3010;&#x4F8B;9.8&#x3011;  &#x4ECE;sysadmin&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x4E2D;&#x5220;&#x9664;SQL Server&#x767B;&#x5F55;&#x540D;david&#x3002;
+EXEC sp_dropsrvrolemember &apos;david&apos;, &apos;sysadmin&apos;
+</code></pre><h3 id="&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;">&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;</h3>
+<pre><code>
+&#xFF08;1&#xFF09;db_owner&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x6240;&#x6709;&#x8005;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x53EF;&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6240;&#x6709;&#x7BA1;&#x7406;&#x64CD;&#x4F5C;&#x3002;
+&#x7528;&#x6237;&#x53D1;&#x51FA;&#x7684;&#x6240;&#x6709;SQL&#x8BED;&#x53E5;&#x5747;&#x53D7;&#x9650;&#x4E8E;&#x8BE5;&#x7528;&#x6237;&#x5177;&#x6709;&#x7684;&#x6743;&#x9650;&#x3002;&#x4F8B;&#x5982;&#xFF0C;CREATE DATABASE&#x4EC5;&#x9650;&#x4E8E;sysadmin&#x548C;dbcreator&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x4F7F;&#x7528;&#x3002;
+sysadmin&#x56FA;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x3001;db_owner&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x7684;&#x6240;&#x6709;&#x8005;&#x90FD;&#x53EF;&#x6388;&#x4E88;&#x3001;&#x62D2;&#x7EDD;&#x6216;&#x5E9F;&#x9664;&#x67D0;&#x4E2A;&#x7528;&#x6237;&#x6216;&#x67D0;&#x4E2A;&#x89D2;&#x8272;&#x7684;&#x6743;&#x9650;&#x3002;&#x4F7F;&#x7528;GRANT&#x8D4B;&#x4E88;&#x6267;&#x884C;T-SQL&#x8BED;&#x53E5;&#x6216;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x6743;&#x9650;&#xFF1B;&#x4F7F;&#x7528;DENY&#x62D2;&#x7EDD;&#x6743;&#x9650;&#xFF0C;&#x5E76;&#x9632;&#x6B62;&#x6307;&#x5B9A;&#x7684;&#x7528;&#x6237;&#x3001;&#x7EC4;&#x6216;&#x89D2;&#x8272;&#x4ECE;&#x7EC4;&#x548C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x7684;&#x5173;&#x7CFB;&#x4E2D;&#x7EE7;&#x627F;&#x6743;&#x9650;&#xFF1B;&#x4F7F;&#x7528;REVOKE&#x53D6;&#x6D88;&#x4EE5;&#x524D;&#x6388;&#x4E88;&#x6216;&#x62D2;&#x7EDD;&#x7684;&#x6743;&#x9650;&#x3002; 
+&#xFF08;2&#xFF09;db_accessadmin&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x7BA1;&#x7406;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x5177;&#x6709;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x4F7F;&#x7528;&#x8005;&#x3001;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x548C;&#x7EC4;&#x7684;&#x6743;&#x9650;&#x3002;
+&#xFF08;3&#xFF09;db_securityadmin&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x8868;&#x7684;&#x589E;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x548C;&#x67E5;&#x8BE2;&#x7B49;&#x5B58;&#x53D6;&#x6743;&#x9650;&#x3002;
+&#xFF08;4&#xFF09;db_ddladmin&#xFF1A;&#x6570;&#x636E;&#x5E93;DDL&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x589E;&#x52A0;&#x3001;&#x4FEE;&#x6539;&#x6216;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x3002;
+
+&#xFF08;5&#xFF09;db_backupoperator&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x5907;&#x4EFD;&#x64CD;&#x4F5C;&#x5458;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x5177;&#x6709;&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x5907;&#x4EFD;&#x7684;&#x6743;&#x9650;&#x3002;
+&#xFF08;6&#xFF09;db_datareader&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x4ECE;&#x6240;&#x6709;&#x7528;&#x6237;&#x8868;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x3002;
+&#xFF08;7&#xFF09;db_datawriter&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x5199;&#x5165;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x5177;&#x6709;&#x5BF9;&#x6240;&#x6709;&#x7528;&#x6237;&#x8868;&#x8FDB;&#x884C;&#x589E;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x4FEE;&#x6539;&#x7684;&#x6743;&#x9650;&#x3002;
+&#xFF08;8&#xFF09;db_denydatareader&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x62D2;&#x7EDD;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x4E0D;&#x80FD;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x4EFB;&#x4F55;&#x8868;&#x7684;&#x5185;&#x5BB9;&#x3002;
+&#xFF08;9&#xFF09;db_denydatawriter&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x62D2;&#x7EDD;&#x6570;&#x636E;&#x5199;&#x5165;&#x8005;&#xFF0C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x4E0D;&#x80FD;&#x5BF9;&#x4EFB;&#x4F55;&#x8868;&#x8FDB;&#x884C;&#x589E;&#x52A0;&#x3001;&#x5220;&#x4FEE;&#x3001;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x3002;
+&#xFF08;10&#xFF09;public&#xFF1A;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x90FD;&#x662F;public&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x5C06;&#x7528;&#x6237;&#x3001;&#x7EC4;&#x6216;&#x89D2;&#x8272;&#x6307;&#x6D3E;&#x4E3A;public&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x5220;&#x9664;public&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x3002;&#x901A;&#x5E38;&#x5C06;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x7684;&#x6743;&#x9650;&#x8D4B;&#x7ED9;public&#x89D2;&#x8272;&#x3002;
+
+1&#xFF0E;&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x6DFB;&#x52A0;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x2192;&#x5B89;&#x5168;&#x6027;&#x2192;&#x7528;&#x6237;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#xFF0C;&#x4F8B;&#x5982;&#x201C;david&#x201D;&#xFF0C;&#x53CC;&#x51FB;&#x6216;&#x5355;&#x51FB;&#x53F3;&#x952E;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x201D;&#x7A97;&#x53E3;&#x3002;
+&#x7B2C;2&#x6B65;&#xFF1A;&#x5728;&#x6253;&#x5F00;&#x7684;&#x7A97;&#x53E3;&#x4E2D;&#xFF0C;&#x5728;&#x201C;&#x5E38;&#x89C4;&#x201D;&#x9009;&#x9879;&#x5361;&#x4E2D;&#x7684;&#x201C;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6210;&#x5458;&#x8EAB;&#x4EFD;&#x201D;&#x680F;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x8981;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x524D;&#x7684;&#x590D;&#x9009;&#x6846;&#x4E2D;&#x6253;&#x52FE;&#xFF0C;&#x6765;&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#xFF0C;&#x5982;&#x56FE;9.9&#x6240;&#x793A;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5B8C;&#x6210;&#x6DFB;&#x52A0;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224243.png" alt=""></p>
+<pre><code>&#x7B2C;3&#x6B65;&#xFF1A;&#x67E5;&#x770B;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x3002;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x7A97;&#x53E3;&#x4E2D;&#xFF0C;&#x5728;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E0B;&#x7684;&#x201C;&#x5B89;&#x5168;&#x6027;&#x2192;&#x89D2;&#x8272;&#x2192;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x201D;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#xFF0C;&#x5982;db_owner&#xFF0C;&#x53F3;&#x51FB;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x5728;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#x4E2D;&#x7684;&#x201C;&#x89D2;&#x8272;&#x6210;&#x5458;&#x201D;&#x680F;&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x56FE;9.10&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224244.png" alt=""></p>
+<pre><code>2&#xFF0E;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x6DFB;&#x52A0;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;sp_addrolemember&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x5230;&#x67D0;&#x4E00;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x4E2D;&#xFF0C;&#x4F7F;&#x5176;&#x6210;&#x4E3A;&#x8BE5;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+sp_addrolemember[ @rolename = ] &apos;role&apos;, [ @membername = ] &apos;security_account&apos;
+&#x53C2;&#x6570;&#x542B;&#x4E49;&#xFF1A;&apos;role&apos;&#x4E3A;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x540D;&#x79F0;&#x3002;&apos;security_account&apos;&#x4E3A;&#x6DFB;&#x52A0;&#x5230;&#x8BE5;&#x89D2;&#x8272;&#x7684;&#x5B89;&#x5168;&#x8D26;&#x6237;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6216;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x3002;
+&#x3010;&#x4F8B;9.9&#x3011;  &#x5C06;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;david&#xFF08;&#x5047;&#x8BBE;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF09;&#x6DFB;&#x52A0;&#x4E3A;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;db_owner&#x7684;&#x6210;&#x5458;&#x3002;
+USE PXSCJ
+GO
+EXEC sp_addrolemember &apos;db_owner&apos;, &apos;david&apos;
+
+3&#xFF0E;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;&#x5220;&#x9664;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6210;&#x5458;
+&#x5229;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;sp_droprolemember&#x53EF;&#x4EE5;&#x5C06;&#x67D0;&#x4E00;&#x6210;&#x5458;&#x4ECE;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x4E2D;&#x53BB;&#x9664;&#x3002;
+&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+sp_droprolemember [ @rolename = ] &apos;role&apos; , [ @membername = ] &apos;security_account&apos;
+
+&#x3010;&#x4F8B;9.10&#x3011;  &#x5C06;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;david&#x4ECE;db_owner&#x4E2D;&#x53BB;&#x9664;&#x3002;
+USE PXSCJ
+GO
+EXEC sp_droprolemember &apos;db_owner&apos;, &apos;david&apos;
+</code></pre><h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;">&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;</h3>
+<pre><code>1&#xFF0E;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x3002;&#x4EE5;Windows&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FDE;&#x63A5;SQL Server&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x8981;&#x521B;&#x5EFA;&#x89D2;&#x8272;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x5982;PXSCJ&#xFF09;&#x2192;&#x201C;&#x5B89;&#x5168;&#x6027;&#x201D;&#x2192;&#x201C;&#x89D2;&#x8272;&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5B50;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x5982;&#x56FE;9.11&#x6240;&#x793A;&#x3002;&#x8FDB;&#x5165;&#x201C;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002256.png" alt=""></p>
+<pre><code>&#x7B2C;2&#x6B65;&#xFF1A;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x52A0;&#x5165;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x3002;
+&#x5F53;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6210;&#x4E3A;&#x67D0;&#x4E00;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#x4E4B;&#x540E;&#xFF0C;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x5C31;&#x83B7;&#x5F97;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6240;&#x62E5;&#x6709;&#x7684;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x7684;&#x6743;&#x9650;&#x3002;
+&#x5982;&#x56FE;9.12&#x6240;&#x793A;&#x662F;&#x5C06;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;david&#x52A0;&#x5165;ROLE1&#x89D2;&#x8272;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002257.png" alt=""></p>
+<pre><code>2&#xFF0E;&#x901A;&#x8FC7;SQL&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;
+&#xFF08;1&#xFF09;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x3002;&#x521B;&#x5EFA;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CREATE ROLE&#x8BED;&#x53E5;&#x3002;
+&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+CREATE ROLE role_name [ AUTHORIZATION owner_name ]
+ &#x3010;&#x4F8B;9.11&#x3011;  &#x5982;&#x4E0B;&#x793A;&#x4F8B;&#x5728;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x540D;&#x4E3A;ROLE2&#x7684;&#x65B0;&#x89D2;&#x8272;&#xFF0C;&#x5E76;&#x6307;&#x5B9A;dbo&#x4E3A;&#x8BE5;&#x89D2;&#x8272;&#x7684;&#x6240;&#x6709;&#x8005;&#x3002;
+USE PXSCJ
+GO
+CREATE ROLE ROLE2
+    AUTHORIZATION dbo
+&#xFF08;2&#xFF09;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x3002;&#x5411;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6DFB;&#x52A0;&#x6210;&#x5458;&#x4E5F;&#x4F7F;&#x7528;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;sp_ addrolemember&#xFF0C;&#x7528;&#x6CD5;&#x4E0E;&#x4E4B;&#x524D;&#x4ECB;&#x7ECD;&#x7684;&#x57FA;&#x672C;&#x76F8;&#x540C;&#x3002;
+
+&#x3010;&#x4F8B;9.12&#x3011;  &#x4F7F;&#x7528;Windows&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x6A21;&#x5F0F;&#x7684;&#x767B;&#x5F55;&#x540D;&#xFF08;&#x5982;0BD7E57C949A420\liu&#xFF09;&#x521B;&#x5EFA;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#xFF08;&#x5982;0BD7E57C949A420\liu&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x5230;ROLE1&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x4E2D;&#x3002;
+USE PXSCJ
+GO
+CREATE USER  [0BD7E57C949A420\liu]        
+    FROM LOGIN [0BD7E57C949A420\liu]
+GO
+EXEC sp_addrolemember &apos;ROLE1&apos;, &apos;0BD7E57C949A420\liu&apos;
+&#x3010;&#x4F8B;9.13&#x3011;  &#x5C06;SQL Server&#x767B;&#x5F55;&#x540D;&#x521B;&#x5EFA;&#x7684;PXSCJ&#x7684;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;wang&#xFF08;&#x5047;&#x8BBE;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF09;&#x6DFB;&#x52A0;&#x5230;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;ROLE1&#x4E2D;&#x3002;
+USE PXSCJ
+GO
+EXEC sp_addrolemember &apos;ROLE1&apos;,&apos;wang&apos;
+&#x3010;&#x4F8B;9.14&#x3011;  &#x5C06;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;ROLE2&#xFF08;&#x5047;&#x8BBE;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF09;&#x6DFB;&#x52A0;&#x5230;ROLE1&#x4E2D;&#x3002;
+EXEC sp_addrolemember &apos;ROLE1&apos;,&apos;ROLE2&apos;
+
+3&#xFF0E;&#x901A;&#x8FC7;SQL&#x547D;&#x4EE4;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;
+&#x8981;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;DROP ROLE&#x8BED;&#x53E5;&#x3002;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+DROP ROLE role_name
+&#x5176;&#x4E2D;&#xFF0C;role_name&#x4E3A;&#x8981;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x540D;&#x79F0;&#x3002;
+&#x3010;&#x4F8B;9.15&#x3011;  &#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;ROLE2&#x3002;
+&#x5728;&#x5220;&#x9664;ROLE2&#x4E4B;&#x524D;&#x9996;&#x5148;&#x9700;&#x8981;&#x5C06;ROLE2&#x4E2D;&#x7684;&#x6210;&#x5458;&#x5220;&#x9664;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x3002;&#x82E5;&#x4F7F;&#x7528;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#xFF0C;&#x53EA;&#x9700;&#x5728;ROLE2&#x7684;&#x5C5E;&#x6027;&#x9875;&#x4E2D;&#x64CD;&#x4F5C;&#x5373;&#x53EF;&#x3002;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x5728;&#x5220;&#x9664;&#x56FA;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#x6210;&#x5458;&#x65F6;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x524D;&#x9762;&#x5185;&#x5BB9;&#x3002;&#x786E;&#x8BA4;ROLE2&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5220;&#x9664;ROLE2&#xFF1A;
+DROP ROLE ROLE2
+</code></pre><h3 id="&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;">&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;</h3>
+<pre><code>&#x5728;SQL Server 2008&#x4E2D;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#x5E76;&#x6D4B;&#x8BD5;&#x7684;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x3002;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FDE;&#x63A5;SQL Server&#xFF0C;&#x5728;&#x201C;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x2192;&#x5B89;&#x5168;&#x6027;&#x2192;&#x89D2;&#x8272;&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x201C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#x201D;&#x3002;
+&#x7B2C;2&#x6B65;&#xFF1A;&#x5728;&#x201C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x8F93;&#x5165;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#x540D;&#x79F0;addrole&#xFF0C;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;dbo&#xFF0C;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&#x4E3A;123456&#xFF0C;&#x5982;&#x56FE;9.13&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121224245.png" alt=""></p>
+<pre><code>&#x5728;&#x201C;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x201D;&#x9009;&#x9879;&#x5361;&#x9875;&#x9762;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5355;&#x51FB;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x6DFB;&#x52A0;&#x201C;&#x7279;&#x5B9A;&#x5BF9;&#x8C61;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x5BF9;&#x8C61;&#x4E3A;&#x8868;XSB&#xFF0C;&#x5982;&#x56FE;9.14&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002258.png" alt=""></p>
+<pre><code>&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x56DE;&#x5230;&#x201C;&#x5B89;&#x5168;&#x5BF9;&#x8C61;&#x201D;&#x9009;&#x9879;&#x5361;&#x4E2D;&#xFF0C;&#x6388;&#x4E88;&#x8868;XSB&#x7684;&#x201C;&#x9009;&#x62E9;&#x201D;&#x6743;&#x9650;&#xFF08;&#x5982;&#x56FE;9.15&#xFF09;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x5355;&#x51FB;&#x201C;&#x786E;&#x8BA4;&#x201D;&#x6309;&#x94AE;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002259.png" alt=""></p>
+<pre><code>&#x7B2C;3&#x6B65;&#xFF1A;&#x65B0;&#x5EFA;SQL Server&#x767B;&#x5F55;&#x540D;jack&#xFF0C;&#x5E76;&#x65B0;&#x5EFA;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;jack&#xFF08;&#x5C06;&#x5176;&#x6DFB;&#x52A0;&#x4E3A;db_denydatareader&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x7684;&#x6210;&#x5458;&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x201C;jack&#x201D;&#x767B;&#x5F55;&#x540D;&#x8FDE;&#x63A5;SQL Server&#x3002;&#x5728;&#x67E5;&#x8BE2;&#x7A97;&#x53E3;&#x4E2D;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+USE PXSCJ
+GO
+SELECT * FROM XSB
+&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;9.16&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002300.png" alt=""></p>
+<pre><code>&#x7B2C;4&#x6B65;&#xFF1A;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x5B58;&#x50A8;&#x8FC7;&#x7A0B;sp_setapprole&#x6FC0;&#x6D3B;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x89D2;&#x8272;&#xFF0C;&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;
+EXEC sp_setapprole &apos;addrole&apos;, &apos;123456&apos;
+&#x7B2C;5&#x6B65;&#xFF1A;&#x5728;&#x5F53;&#x524D;&#x67E5;&#x8BE2;&#x7A97;&#x53E3;&#x4E2D;&#x91CD;&#x65B0;&#x8F93;&#x5165;&#x7B2C;3&#x6B65;&#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF0C;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;9.17&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002301.png" alt=""></p>
+<h2 id="&#x6570;&#x636E;&#x5E93;&#x6743;&#x9650;&#x7684;&#x7BA1;&#x7406;">&#x6570;&#x636E;&#x5E93;&#x6743;&#x9650;&#x7684;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x6388;&#x4E88;&#x6743;&#x9650;">&#x6388;&#x4E88;&#x6743;&#x9650;</h3>
+<pre><code>
+&#x6743;&#x9650;&#x7684;&#x6388;&#x4E88;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x6216;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x5B8C;&#x6210;&#x3002;
+&#xFF08;1&#xFF09;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x6388;&#x4E88;&#x6743;&#x9650;&#x3002;&#x5229;&#x7528;GRANT&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x6216;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;&#x6388;&#x4E88;&#x6570;&#x636E;&#x5E93;&#x7EA7;&#x522B;&#x6216;&#x5BF9;&#x8C61;&#x7EA7;&#x522B;&#x7684;&#x6743;&#x9650;&#x3002;
+&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+GRANT { ALL [ PRIVILEGES ] } | permission [ ( column [ ,...n ] ) ] [ ,...n ]
+      [ ON securable ] TO principal [ ,...n ] 
+      [ WITH GRANT OPTI
+&#x3010;&#x4F8B;9.16&#x3011;  &#x7ED9;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E0A;&#x7684;&#x7528;&#x6237;david&#x548C;wang&#x6388;&#x4E88;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x6743;&#x9650;&#x3002;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+USE PXSCJ
+GO
+GRANT CREATE TABLE 
+    TO david, wang
+GO
+
+ON ] [ AS principal ]
+
+
+&#x3010;&#x4F8B;9.17&#x3011;  &#x9996;&#x5148;&#x5728;&#x6570;&#x636E;&#x5E93;PXSCJ&#x4E2D;&#x7ED9;public&#x89D2;&#x8272;&#x6388;&#x4E88;&#x8868;XSB&#x7684;SELECT&#x6743;&#x9650;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x6743;&#x9650;&#x6388;&#x4E88;&#x7528;&#x6237;david&#x548C;wang&#xFF0C;&#x4F7F;&#x7528;&#x6237;&#x6709;&#x5BF9;XSB&#x8868;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x3002;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+USE PXSCJ
+GO
+GRANT SELECT 
+    ON XSB
+    TO public
+GO 
+GRANT INSERT, UPDATE, DELETE, REFERENCES
+    ON XSB 
+    TO david, wang
+GO
+&#x3010;&#x4F8B;9.18&#x3011;  &#x5C06;CREATE TABLE&#x6743;&#x9650;&#x6388;&#x4E88;&#x6570;&#x636E;&#x5E93;&#x89D2;&#x8272;ROLE1&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x3002;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+GRANT CREATE TABLE 
+    TO ROLE1
+
+&#x3010;&#x4F8B;9.19&#x3011;  &#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x5C06;&#x8868;XSB&#x7684;SELECT&#x6743;&#x9650;&#x6388;&#x4E88;ROLE2&#x89D2;&#x8272;&#xFF08;&#x6307;&#x5B9A;WITH GRANT OPTION&#x5B50;&#x53E5;&#xFF09;&#x3002;&#x7528;&#x6237;li&#x662F;ROLE2&#x7684;&#x6210;&#x5458;&#xFF08;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x7565;&#xFF09;&#xFF0C;&#x5728;li&#x7528;&#x6237;&#x4E0A;&#x5C06;&#x8868;XSB&#x4E0A;&#x7684;SELECT&#x6743;&#x9650;&#x6388;&#x4E88;&#x7528;&#x6237;huang&#xFF08;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x7565;&#xFF09;&#xFF0C;huang&#x4E0D;&#x662F;ROLE2&#x7684;&#x6210;&#x5458;&#x3002;
+&#x9996;&#x5148;&#x4EE5;Windows&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FDE;&#x63A5;SQL Server&#xFF0C;&#x6388;&#x4E88;&#x89D2;&#x8272;ROLE2&#x5728;XSB&#x8868;&#x4E0A;&#x7684;SELECT&#x6743;&#x9650;&#xFF1A;
+USE PXSCJ
+GO
+GRANT SELECT 
+    ON XSB         
+    TO ROLE2 
+    WITH GRANT OPTION
+
+&#x5728;&#x201C;SQL Server Management Studio&#x201D;&#x7A97;&#x53E3;&#x4E0A;&#x5355;&#x51FB;&#x201C;&#x65B0;&#x5EFA;&#x67E5;&#x8BE2;&#x201D;&#x6309;&#x94AE;&#x65C1;&#x8FB9;&#x7684;&#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x67E5;&#x8BE2;&#x6309;&#x94AE;&#x201C;      &#x201D;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x8FDE;&#x63A5;&#x7A97;&#x53E3;&#x4E2D;&#x4EE5;li&#x7528;&#x6237;&#x7684;&#x767B;&#x5F55;&#x540D;&#x767B;&#x5F55;&#xFF0C;&#x5982;&#x56FE;9.18&#x6240;&#x793A;&#x3002;&#x5355;&#x51FB;&#x201C;&#x8FDE;&#x63A5;&#x201D;&#x6309;&#x94AE;&#x8FDE;&#x63A5;&#x5230;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x51FA;&#x73B0;&#x201C;&#x67E5;&#x8BE2;&#x5206;&#x6790;&#x5668;&#x201D;&#x7A97;&#x53E3;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002302.png" alt=""></p>
+<pre><code>&#x5728;&#x201C;&#x67E5;&#x8BE2;&#x5206;&#x6790;&#x5668;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x8BED;&#x53E5;&#x5C06;&#x7528;&#x6237;li&#x5728;XSB&#x8868;&#x4E0A;&#x7684;SELECT&#x6743;&#x9650;&#x6388;&#x4E88;huang&#xFF1A;
+USE PXSCJ
+GO
+GRANT SELECT 
+    ON XSB TO huang 
+    AS ROLE2
+&#x3010;&#x4F8B;9.20&#x3011;  &#x5728;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;PXSCJ&#x4E2D;&#x7ED9;public&#x89D2;&#x8272;&#x8D4B;&#x4E88;&#x5BF9;&#x8868;XSB&#x4E2D;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x5B57;&#x6BB5;&#x7684;SELECT&#x6743;&#x9650;&#x3002;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+USE PXSCJ
+GO
+GRANT SELECT  (&#x5B66;&#x53F7;,&#x59D3;&#x540D;) ON XSB  TO public
+GO
+
+&#xFF08;2&#xFF09;&#x4F7F;&#x7528;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x6388;&#x4E88;&#x8BED;&#x53E5;&#x6743;&#x9650;&#x3002;
+&#x2460; &#x6388;&#x4E88;&#x6570;&#x636E;&#x5E93;&#x4E0A;&#x7684;&#x6743;&#x9650;&#x3002;&#x4EE5;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;wang&#xFF08;&#x5047;&#x8BBE;&#x8BE5;&#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;SQL Server&#x767B;&#x5F55;&#x540D;&#x201C;wang&#x201D;&#x521B;&#x5EFA;&#xFF09;&#x6388;&#x4E88;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;CREATE TABLE&#x8BED;&#x53E5;&#x7684;&#x6743;&#x9650;&#xFF08;&#x5373;&#x521B;&#x5EFA;&#x8868;&#x7684;&#x6743;&#x9650;&#xFF09;&#x4E3A;&#x4F8B;&#xFF0C;&#x5728;SQL Server Management Studio&#x4E2D;&#x6388;&#x4E88;&#x7528;&#x6237;&#x6743;&#x9650;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#x8FDB;&#x5165;PXSCJ&#x6570;&#x636E;&#x5E93;&#x7684;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x6743;&#x9650;&#x201D;&#x9875;&#x3002;
+
+&#x5728;&#x7528;&#x6237;&#x6216;&#x89D2;&#x8272;&#x680F;&#x4E2D;&#x9009;&#x62E9;&#x9700;&#x8981;&#x6388;&#x4E88;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x6216;&#x89D2;&#x8272;&#xFF08;&#x5982;wang&#xFF09;&#xFF0C;&#x5728;&#x7A97;&#x53E3;&#x4E0B;&#x65B9;&#x5217;&#x51FA;&#x7684;&#x6743;&#x9650;&#x5217;&#x8868;&#x4E2D;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x6743;&#x9650;&#xFF08;&#x5982;&#x201C;&#x521B;&#x5EFA;&#x8868;&#x201D;&#xFF09;&#xFF0C;&#x5728;&#x590D;&#x9009;&#x6846;&#x4E2D;&#x6253;&#x52FE;&#xFF0C;&#x5982;&#x56FE;9.19&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002303.png" alt=""></p>
+<pre><code>&#x5982;&#x56FE;9.19&#x6240;&#x793A;&#x3002;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x6388;&#x4E88;&#x6743;&#x9650;&#x7684;&#x7528;&#x6237;&#x5728;&#x5217;&#x51FA;&#x7684;&#x7528;&#x6237;&#x5217;&#x8868;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5355;&#x51FB;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#x5C06;&#x8BE5;&#x7528;&#x6237;&#x6DFB;&#x52A0;&#x5230;&#x5217;&#x8868;&#x4E2D;&#x518D;&#x9009;&#x62E9;&#x3002;&#x9009;&#x62E9;&#x7528;&#x6237;&#x540E;&#x5728;&#x5982;&#x56FE;9.19&#x6240;&#x793A;&#x7A97;&#x53E3;&#x4E2D;&#x5355;&#x51FB;&#x201C;&#x6709;&#x6548;&#x201D;&#x9009;&#x9879;&#x5361;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x8BE5;&#x7528;&#x6237;&#x5728;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6709;&#x54EA;&#x4E9B;&#x6743;&#x9650;&#x3002;
+&#x2461; &#x6388;&#x4E88;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x4E0A;&#x7684;&#x6743;&#x9650;&#x3002;&#x4EE5;&#x7ED9;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;wang&#x6388;&#x4E88;KCB&#x8868;&#x4E0A;&#x7684;SELECT&#x3001;INSERT&#x7684;&#x6743;&#x9650;&#x4E3A;&#x4F8B;&#xFF0C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x2192;&#x8868;&#x2192;KCB&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#x8FDB;&#x5165;KCB&#x8868;&#x7684;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x6743;&#x9650;&#x201D;&#x9009;&#x9879;&#x5361;&#x3002;
+
+&#x5355;&#x51FB;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x201C;&#x9009;&#x62E9;&#x7528;&#x6237;&#x6216;&#x89D2;&#x8272;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x5355;&#x51FB;&#x201C;&#x6D4F;&#x89C8;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x9009;&#x62E9;&#x9700;&#x8981;&#x6388;&#x6743;&#x7684;&#x7528;&#x6237;&#x6216;&#x89D2;&#x8272;&#xFF08;&#x5982;wang&#xFF09;&#xFF0C;&#x9009;&#x62E9;&#x540E;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x56DE;&#x5230;KCB&#x8868;&#x7684;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#x3002;&#x5728;&#x8BE5;&#x7A97;&#x53E3;&#x4E2D;&#x9009;&#x62E9;&#x7528;&#x6237;&#xFF08;&#x5982;huang&#xFF09;&#xFF0C;&#x5728;&#x6743;&#x9650;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x9700;&#x8981;&#x6388;&#x4E88;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x201C;&#x63D2;&#x5165;&#xFF08;INSERT&#xFF09;&#x201D;&#x3001;&#x201C;&#x9009;&#x62E9;&#xFF08;SELECT&#xFF09;&#x201D;&#xFF0C;&#x5982;&#x56FE;9.20&#x6240;&#x793A;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#x5B8C;&#x6210;&#x6388;&#x6743;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002304.png" alt=""></p>
+<h3 id="&#x62D2;&#x7EDD;&#x6743;&#x9650;">&#x62D2;&#x7EDD;&#x6743;&#x9650;</h3>
+<pre><code>&#x4F7F;&#x7528;DENY&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x62D2;&#x7EDD;&#x7ED9;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x5185;&#x7684;&#x7528;&#x6237;&#x6388;&#x4E88;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5E76;&#x9632;&#x6B62;&#x6570;&#x636E;&#x5E93;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x5176;&#x7EC4;&#x6216;&#x89D2;&#x8272;&#x6210;&#x5458;&#x8D44;&#x683C;&#x7EE7;&#x627F;&#x6743;&#x9650;&#x3002;
+&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+DENY { ALL [ PRIVILEGES ] }
+      | permission [ ( column [ ,...n ] ) ] [ ,...n ]
+      [ ON securable ] TO principal [ ,...n ] 
+      [ CASCADE] [ AS principal ]
+&#x3010;&#x4F8B;9.21&#x3011;  &#x5BF9;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;CREATE VIEW&#x548C;CREATE TABLE&#x8BED;&#x53E5;&#x3002;
+DENY CREATE VIEW, CREATE TABLE 
+    TO li, huang
+GO
+
+&#x3010;&#x4F8B;9.22&#x3011;  &#x62D2;&#x7EDD;&#x7528;&#x6237;li&#x3001;huang&#x3001;[0BD7E57C949A420\liu]&#x5BF9;&#x8868;XSB&#x7684;&#x4E00;&#x4E9B;&#x6743;&#x9650;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x8FD9;&#x4E9B;&#x7528;&#x6237;&#x5C31;&#x6CA1;&#x6709;&#x5BF9;XSB&#x8868;&#x7684;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x4E86;&#x3002;
+USE PXSCJ
+GO
+DENY SELECT, INSERT, UPDATE, DELETE 
+    ON XSB TO li, huang, [0BD7E57C949A420\liu]
+GO
+&#x3010;&#x4F8B;9.23&#x3011;  &#x5BF9;&#x6240;&#x6709;ROLE2&#x89D2;&#x8272;&#x6210;&#x5458;&#x62D2;&#x7EDD;CREATE TABLE&#x6743;&#x9650;&#x3002;
+DENY CREATE TABLE 
+    TO ROLE2
+GO
+</code></pre><h3 id="&#x64A4;&#x9500;&#x6743;&#x9650;">&#x64A4;&#x9500;&#x6743;&#x9650;</h3>
+<pre><code>&#x3010;&#x4F8B;9.22&#x3011;  &#x62D2;&#x7EDD;&#x7528;&#x6237;li&#x3001;huang&#x3001;[0BD7E57C949A420\liu]&#x5BF9;&#x8868;XSB&#x7684;&#x4E00;&#x4E9B;&#x6743;&#x9650;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x8FD9;&#x4E9B;&#x7528;&#x6237;&#x5C31;&#x6CA1;&#x6709;&#x5BF9;XSB&#x8868;&#x7684;&#x64CD;&#x4F5C;&#x6743;&#x9650;&#x4E86;&#x3002;
+USE PXSCJ
+GO
+DENY SELECT, INSERT, UPDATE, DELETE 
+    ON XSB TO li, huang, [0BD7E57C949A420\liu]
+GO
+&#x3010;&#x4F8B;9.23&#x3011;  &#x5BF9;&#x6240;&#x6709;ROLE2&#x89D2;&#x8272;&#x6210;&#x5458;&#x62D2;&#x7EDD;CREATE TABLE&#x6743;&#x9650;&#x3002;
+DENY CREATE TABLE 
+    TO ROLE2
+GO
+
+&#x3010;&#x4F8B;9.26&#x3011;  &#x53D6;&#x6D88;&#x4EE5;&#x524D;&#x5BF9;wang&#x6388;&#x4E88;&#x6216;&#x62D2;&#x7EDD;&#x7684;&#x5728;XSB&#x8868;&#x4E0A;&#x7684;SELECT&#x6743;&#x9650;&#x3002;
+REVOKE SELECT 
+    ON XSB 
+    FROM wang
+&#x3010;&#x4F8B;9.27&#x3011;  &#x89D2;&#x8272;ROLE2&#x5728;XSB&#x8868;&#x4E0A;&#x62E5;&#x6709;SELECT&#x6743;&#x9650;&#xFF0C;&#x7528;&#x6237;li&#x662F;ROLE2&#x7684;&#x6210;&#x5458;&#xFF0C;li&#x4F7F;&#x7528;WITH GRANT OPTION&#x5B50;&#x53E5;&#x5C06;SELECT&#x6743;&#x9650;&#x8F6C;&#x79FB;&#x7ED9;&#x4E86;&#x7528;&#x6237;huang&#xFF0C;&#x7528;&#x6237;huang&#x4E0D;&#x662F;ROLE2&#x7684;&#x6210;&#x5458;&#x3002;&#x73B0;&#x8981;&#x4EE5;&#x7528;&#x6237;li&#x7684;&#x8EAB;&#x4EFD;&#x64A4;&#x9500;&#x7528;&#x6237;huang&#x7684;SELECT&#x6743;&#x9650;&#x3002;
+&#x4EE5;&#x7528;&#x6237;&#x201C;li&#x201D;&#x7684;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x8BED;&#x53E5;&#x64A4;&#x9500;huang&#x7684;SELECT&#x6743;&#x9650;&#xFF1A;
+USE PXSCJ
+GO
+REVOKE SELECT 
+    ON XSB 
+    TO huang 
+    AS ROLE2
+</code></pre><h2 id="&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;">&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;</h2>
+<h3 id="&#x4F7F;&#x7528;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x67B6;&#x6784;">&#x4F7F;&#x7528;&#x754C;&#x9762;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x67B6;&#x6784;</h3>
+<pre><code>
+&#x4EE5;&#x5728;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x67B6;&#x6784;&#x4E3A;&#x4F8B;&#xFF0C;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x3002;
+&#x7B2C;1&#x6B65;&#xFF1A;&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;SQL Server&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x201C;&#x6570;&#x636E;&#x5E93;&#x2192;PXSCJ&#x2192;&#x5B89;&#x5168;&#x6027;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x67B6;&#x6784;&#x201D;&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x65B0;&#x5EFA;&#x67B6;&#x6784;&#x201D;&#x83DC;&#x5355;&#x9879;&#x3002;
+&#x7B2C;2&#x6B65;&#xFF1A;&#x5728;&#x6253;&#x5F00;&#x7684;&#x201C;&#x67B6;&#x6784;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x5E38;&#x89C4;&#x201D;&#x9009;&#x9879;&#x5361;&#xFF0C;&#x5728;&#x7A97;&#x53E3;&#x53F3;&#x8FB9;&#x201C;&#x67B6;&#x6784;&#x540D;&#x79F0;&#x201D;&#x4E0B;&#x9762;&#x7684;&#x6587;&#x672C;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x67B6;&#x6784;&#x540D;&#x79F0;&#xFF08;&#x5982;test&#xFF09;&#x3002;&#x5355;&#x51FB;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5728;&#x6253;&#x5F00;&#x7684;&#x201C;&#x641C;&#x7D22;&#x89D2;&#x8272;&#x548C;&#x7528;&#x6237;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x5355;&#x51FB;&#x201C;&#x6D4F;&#x89C8;&#x201D;&#x6309;&#x94AE;&#x3002;&#x5982;&#x56FE;9.21&#x6240;&#x793A;&#xFF0C;&#x5728;&#x6253;&#x5F00;&#x7684;&#x201C;&#x67E5;&#x627E;&#x5BF9;&#x8C61;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x201C;david&#x201D;&#x524D;&#x9762;&#x7684;&#x590D;&#x9009;&#x6846;&#x4E2D;&#x6253;&#x52FE;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x8FD4;&#x56DE;&#x201C;&#x641C;&#x7D22;&#x89D2;&#x8272;&#x548C;&#x7528;&#x6237;&#x201D;&#x5BF9;&#x8BDD;&#x6846;&#x3002;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x8FD4;&#x56DE;&#x201C;&#x67B6;&#x6784;-&#x65B0;&#x5EFA;&#x201D;&#x7A97;&#x53E3;&#x3002;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x5B8C;&#x6210;&#x67B6;&#x6784;&#x7684;&#x521B;&#x5EFA;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x5C06;&#x7528;&#x6237;david&#x8BBE;&#x4E3A;&#x4E86;&#x67B6;&#x6784;test&#x7684;&#x6240;&#x6709;&#x8005;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002305.png" alt=""></p>
+<pre><code>&#x7B2C;3&#x6B65;&#xFF1A;&#x67B6;&#x6784;&#x521B;&#x5EFA;&#x5B8C;&#x540E;&#x53EF;&#x4EE5;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x8868;&#x6765;&#x6D4B;&#x8BD5;&#x5982;&#x4F55;&#x8BBF;&#x95EE;&#x67B6;&#x6784;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5728;PXSCJ&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;table_1&#x7684;&#x8868;&#xFF0C;&#x8868;&#x7684;&#x7ED3;&#x6784;&#x5982;&#x56FE;9.22&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200122002306.png" alt=""></p>
+<pre><code>&#x5728;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#xFF0C;&#x8868;&#x7684;&#x9ED8;&#x8BA4;&#x67B6;&#x6784;&#x4E3A;dbo&#xFF0C;&#x8981;&#x5C06;&#x5176;&#x67B6;&#x6784;&#x4FEE;&#x6539;&#x4E3A;test&#x3002;&#x5728;&#x8FDB;&#x884C;&#x8868;&#x7ED3;&#x6784;&#x8BBE;&#x8BA1;&#x65F6;&#xFF0C;&#x8868;&#x8BBE;&#x8BA1;&#x7A97;&#x53E3;&#x53F3;&#x8FB9;&#x6709;&#x4E00;&#x4E2A;&#x8868;table_1&#x7684;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x8868;&#x65F6;&#xFF0C;&#x5E94;&#x5728;&#x8868;&#x7684;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#x4E2D;&#x5C06;&#x8BE5;&#x8868;&#x7684;&#x67B6;&#x6784;&#x8BBE;&#x7F6E;&#x6210;test&#xFF0C;&#x5982;&#x56FE;9.23&#x6240;&#x793A;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#xFF0C;&#x5219;&#x5355;&#x51FB;&#x201C;&#x89C6;&#x56FE;&#x201D;&#x83DC;&#x5355;&#x680F;&#xFF0C;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#x201D;&#x5B50;&#x83DC;&#x5355;&#x5C31;&#x80FD;&#x663E;&#x793A;&#x51FA;&#x5C5E;&#x6027;&#x7A97;&#x53E3;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121234700.png" alt=""></p>
+<pre><code>&#x8BBE;&#x7F6E;&#x5B8C;&#x6210;&#x540E;&#x4FDD;&#x5B58;&#x8BE5;&#x8868;&#xFF0C;&#x4FDD;&#x5B58;&#x540E;&#x7684;&#x8868;&#x53EF;&#x4EE5;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x627E;&#x5230;&#xFF0C;&#x6B64;&#x65F6;&#x8868;&#x540D;&#x5C31;&#x5DF2;&#x7ECF;&#x53D8;&#x6210;test. table_1&#xFF0C;&#x5982;&#x56FE;9.24&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121234701.png" alt=""></p>
+<pre><code>&#x7B2C;4&#x6B65;&#xFF1A;&#x5728;&#x5BF9;&#x8C61;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x5C55;&#x5F00;&#x6570;&#x636E;&#x5E93;&#x201C;PXSCJ&#x2192;&#x5B89;&#x5168;&#x6027;&#x2192;&#x67B6;&#x6784;&#x201D;&#xFF0C;&#x9009;&#x62E9;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x67B6;&#x6784;test&#xFF0C;&#x53F3;&#x51FB;&#x9F20;&#x6807;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5FEB;&#x6377;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&#x201C;&#x5C5E;&#x6027;&#x201D;&#x83DC;&#x5355;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x201C;&#x67B6;&#x6784;&#x5C5E;&#x6027;&#x201D;&#x7A97;&#x53E3;&#xFF0C;&#x5728;&#x8BE5;&#x67B6;&#x6784;&#x5C5E;&#x6027;&#x7684;&#x201C;&#x6743;&#x9650;&#x201D;&#x9009;&#x9879;&#x5361;&#x4E2D;&#xFF0C;&#x5355;&#x51FB;&#x201C;&#x641C;&#x7D22;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x9009;&#x62E9;&#x7528;&#x6237;owner&#xFF08;&#x5047;&#x8BBE;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#xFF09;&#xFF0C;&#x4E3A;&#x7528;&#x6237;owner&#x5206;&#x914D;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x201C;&#x9009;&#x62E9;&#xFF08;SELECT&#xFF09;&#x201D;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x56FE;9.25&#x6240;&#x793A;&#x3002;&#x5355;&#x51FB;&#x201C;&#x786E;&#x5B9A;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x4FDD;&#x5B58;&#x4E0A;&#x8FF0;&#x8BBE;&#x7F6E;&#x3002;&#x7528;&#x540C;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6388;&#x4E88;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x8BE5;&#x67B6;&#x6784;&#x7684;&#x6743;&#x9650;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121234702.png" alt=""></p>
+<pre><code>&#x7B2C;5&#x6B65;&#xFF1A;&#x91CD;&#x65B0;&#x542F;&#x52A8;SQL Server Management Studio&#xFF0C;&#x4F7F;&#x7528;SQL Server&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x7528;&#x6237;owner&#x7684;&#x767B;&#x5F55;&#x540D;&#x8FDE;&#x63A5;SQL Server&#x3002;&#x5728;&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5728;&#x201C;&#x67E5;&#x8BE2;&#x5206;&#x6790;&#x5668;&#x201D;&#x7A97;&#x53E3;&#x4E2D;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x8868;test. table_1&#x4E2D;&#x6570;&#x636E;&#x7684;T-SQL&#x8BED;&#x53E5;&#x3002;
+USE PXSCJ
+GO
+SELECT * FROM test.table_1
+&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;9.26&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121234703.png" alt=""></p>
+<pre><code>&#x518D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;SQL&#x67E5;&#x8BE2;&#xFF0C;&#x5728;&#x67E5;&#x8BE2;&#x7F16;&#x8F91;&#x5668;&#x4E2D;&#x8F93;&#x5165;&#x5220;&#x9664;&#x8868;test. table_1&#x7684;T-SQL&#x8BED;&#x53E5;&#xFF1A;
+DELETE FROM test.table_1
+&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;9.27&#x6240;&#x793A;&#x3002;
+</code></pre><p><img src="https://img1.zlogs.net/20/20200121234704.png" alt=""></p>
+<h3 id="&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x67B6;&#x6784;">&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x67B6;&#x6784;</h3>
+<pre><code class="lang-sql">&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SCHEMA</span>&#x8BED;&#x53E5;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x67B6;&#x6784;&#x3002;
+&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SCHEMA</span> &lt;schema_name_clause&gt; [ &lt;schema_element&gt; [ , ...n ] ]
+&#x5176;&#x4E2D;&#xFF0C;
+&lt;schema_name_clause&gt; ::=
+    {
+      schema_name
+     | AUTHORIZATION owner_name
+     | schema_name AUTHORIZATION owner_name
+    }
+
+&lt;schema_element&gt; ::= 
+    { 
+        table_definition | view_definition | grant_statement 
+        revoke_statement | deny_statement 
+    }
+
+&#x3010;&#x4F8B;<span class="hljs-number">9.28</span>&#x3011;  &#x521B;&#x5EFA;&#x67B6;&#x6784;test_schema&#xFF0C;&#x5176;&#x6240;&#x6709;&#x8005;&#x4E3A;&#x7528;&#x6237;david&#x3002;
+&#x4EE5;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;<span class="hljs-keyword">SQL</span> <span class="hljs-keyword">Server</span>&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#xFF0C;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#xFF1A;
+<span class="hljs-keyword">USE</span> PXSCJ
+<span class="hljs-keyword">GO</span>
+<span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">SCHEMA</span> test_schema
+    AUTHORIZATION david
+&#x53E6;&#x5916;&#xFF0C;&#x8981;&#x5220;&#x9664;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">SCHEMA</span>&#x8BED;&#x53E5;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;
+<span class="hljs-keyword">DROP</span> <span class="hljs-keyword">SCHEMA</span> test_schema
+</code></pre>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11045.html" class="navigation navigation-prev " aria-label="Previous page: 数据安全性控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11345.html" class="navigation navigation-next " aria-label="Next page: 数据库备份、恢复、复制">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MSSQL","level":"2.4.1.5.4.1","depth":5,"next":{"title":"数据库备份、恢复、复制","level":"2.4.1.5.5","depth":4,"path":"page/11345.md","ref":"page/11345.md","articles":[{"title":"MSSQL数据库备份、恢复、复制","level":"2.4.1.5.5.1","depth":5,"path":"page/11046.md","ref":"page/11046.md","articles":[]},{"title":"数据库快照、分离、附加","level":"2.4.1.5.5.2","depth":5,"path":"page/11244.md","ref":"page/11244.md","articles":[{"title":"MSSQL快照、分离、附加","level":"2.4.1.5.5.2.1","depth":6,"path":"page/11245.md","ref":"page/11245.md","articles":[]}]}]},"previous":{"title":"数据安全性控制","level":"2.4.1.5.4","depth":4,"path":"page/11045.md","ref":"page/11045.md","articles":[{"title":"MSSQL","level":"2.4.1.5.4.1","depth":5,"path":"page/11278.md","ref":"page/11278.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","katex@git+https://github.com/plugins-zander/gitbook-plugin-katex.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git","edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git","sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git","gtag@git+https://github.com/plugins-zander/gitbook-plugin-gtag.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git","page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"sitemap-general":{"prefix":"https://zlogs.net/learn-sql/"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"gtag":{"token":"UA-149127400-1"},"highlight":{},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"364365ceb2659b383d73","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["zanderzhao"],"createIssueManually":false,"distractionFreeMode":false,"repo":"talk","owner":"zanderzhao","enableHotKey":true,"clientSecret":"447ef6648e9dfffe2e2a65c34c8ead1dd4b7af54","pagerDirection":"last","labels":["Gitalk"]},"edit-link":{"label":"EDIT","base":"https://github.com/ZanderZhao/learn-sql/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Zander Zhao","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"learn-sql","language":"zh-hans","gitbook":"3.2.3","description":"learn-sql - Zander's Learn Book"},"file":{"path":"page/11278.md","mtime":"2020-04-09T08:43:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-09T08:53:57.415Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://cdn.jsdelivr.net/gh/ZanderZhao/cdn/js/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gtag/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
