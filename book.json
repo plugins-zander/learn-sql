@@ -4,12 +4,6 @@
   "description": "learn-sql - Zander's Learn Book",
   "language": "zh-hans",
   "gitbook": "3.2.3",
-  "links": {
-    "sidebar": {  
-        "# 博客": "https://zlogs.net",
-        "# 总目录": "https://zlogs.net/learn-books"
-      }
-  },
   "plugins": [
     "-lunr",
     "-search",
@@ -20,10 +14,8 @@
     "splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git",
     "mygitalk@git+https://github.com/plugins-zander/gitbook-plugin-mygitalk.git",
     "edit-link@git+https://github.com/plugins-zander/gitbook-plugin-edit-link.git",
-    "donate@git+https://github.com/plugins-zander/gitbook-plugin-donate.git",
     "sitemap-general@git+https://github.com/plugins-zander/gitbook-plugin-sitemap-general.git",
-    "tbfed-pagefooter@git+https://github.com/plugins-zander/gitbook-plugin-tbfed-pagefooter.git",
-    "todo@git+https://github.com/plugins-zander/gitbook-plugin-todo.git",
+    "gtag@git+https://github.com/plugins-zander/gitbook-plugin-gtag.git",
     "chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git",
     "copy-code-button@git+https://github.com/plugins-zander/gitbook-plugin-copy-code-button.git",
     "page-toc@git+https://github.com/plugins-zander/gitbook-plugin-page-toc.git"
@@ -39,26 +31,15 @@
       ],
       "distractionFreeMode": false
     },
+    "gtag": {
+      "token": "UA-149127400-1"
+    },
     "edit-link": {
       "base": "https://github.com/ZanderZhao/learn-sql/edit/master/",
-      "label": "编辑本页"
-    },
-    "donate": {
-      "wechat": "https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/wechat.jpg",
-      "alipay": "https://cdn.jsdelivr.net/gh/ZanderZhao/images/mypay/book/alipay.jpg",
-      "title": "",
-      "button": "赏",
-      "alipayText": "支付宝打赏",
-      "wechatText": "微信打赏"
+      "label": "EDIT"
     },
     "sitemap-general": {
       "prefix": "https://zlogs.net/learn-sql/"
-    },
-    "tbfed-pagefooter": {
-      "copyright": "转载注明出处 &copy Zander Zhao",
-      "modify_bszlabel": "<span id=\"busuanzi_container_page_pv\">本文总阅读量<span id=\"busuanzi_value_page_pv\"></span>次</span>",
-      "modify_label": "最新修订时间：",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "page-toc": {
       "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
